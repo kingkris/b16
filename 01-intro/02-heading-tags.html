@@ -8,6 +8,17 @@
 		.bdr{
 			border: solid 1px red;
 		}
+		.page-heading{
+			border-bottom: solid 4px tomato;
+			font-size: 30px;
+			text-transform: uppercase;
+		}
+
+		.lead-text{
+			font-size: 18px;
+			color: crimson;
+		}
+
 	</style>
 </head>
 <body>
@@ -19,16 +30,39 @@
 </nav>
 	
 	<h1 style="background-color:yellow">This is a heading1 tag</h1>
-	<h2>This is a heading2 tag</h2>
+	<h2 id="page-title" class="page-heading">This is a heading2 tag</h2>
 	<h3 class="bdr">
 		<a href="http://www.htmlden.com/"><img src="icon-help.png" alt="Help"> This is a heading3 tag</a>
 	</h3>
 	<h4>This is a heading4 tag <a href="01-intro.html"><img src="icon-speaker.png" alt=""></a></h4>
 	<h5>This is a heading5 tag</h5>
-	<h6>This is a heading6 tag</h6>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ullam voluptatem est dolorem sequi possimus autem quisquam distinctio earum deleniti corporis minima, quo modi, a molestias tempora eum! Et, non.</p>
-	<a href="01-intro.html" class="bdr">This is a link</a>
+	<h6 class="lead-text">This is a heading6 tag</h6>
+	<p class="lead-text" no-wrap>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ullam voluptatem est dolorem sequi possimus autem quisquam distinctio earum deleniti corporis minima, quo modi, a molestias tempora eum! Et, non.</p>
+	<a href="01-intro.html" class="bdr lead-text">This is a link</a>
 	<img src="" alt="">
 </div>
+<div></div>
+
+<div></div>
+<div>
+	
+</div>
+
+class
+id
+style
+title
+
+
+Boolean Attributes - 
+
+<!-- 
+<script>
+	x = document.getElementById('page-title');
+	y = prompt("What is your name");
+	x.innerHTML = 'Hey ' + y + ', Welcome';
+</script>
+ -->
+
 </body>
 </html>
