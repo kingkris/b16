@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Html lists</title>
+	<style>
+		.questions{
+			background-color: rgba(0,0,0,.8);
+			border-radius: 10px;
+			position: fixed;
+			right: 10px;
+			bottom: 10px;
+			color: #FFF;
+			font-family: Verdana, Geneva, sans-serif;
+			padding: 10px;
+		}
+		.bdr{
+			border: solid 1px red;
+		}
+		.list{
+			border: solid 1px red;
+			list-style: kannada;
+		}
+	</style>
+</head>
+<body>
+	<h1>html lists</h1>
+	<p>there are 3 types of lists</p>
+	<ul>
+		<li>Un Ordered lists</li>
+		<li>Ordered lists</li>
+		<li>Definition lists</li>
+	</ul>
+	<h2>Un Ordered Lists -- <code>&lt;ul&gt;</code> </h2>
+	<ul class="bdr">
+		<li>Only <code>&lt;li&gt;</code> can come as child of <code>&lt;UL&gt;</code>, no other element or content can come as direct child of ul</li>
+		<li>Inside <code>&lt;li&gt;</code>, you can flow category content</li>
+		<li>
+			<h3>This is heading is inside list item</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio repellendus consectetur error nihil reprehenderit facilis facere provident. Eveniet temporibus corrupti voluptatem commodi accusamus dolore dolores, veniam aliquam dolorem. Optio.</p>
+			<div>i am a div</div>
+		</li>
+		<li>List item4</li>
+		<li>List item5
+			<ul>
+				<li>sub list item 01</li>
+				<li>sub list item 02</li>
+				<li>sub list item 03
+					<ul>
+						<li>sub sub list item 01</li>
+						<li>sub sub list item 02
+							<ul class="list">
+								<li>sub sub sub list item 01</li>
+								<li>sub sub sub list item 02</li>
+								<li>sub sub sub list item 03</li>
+								<li>sub sub sub list item 04</li>
+							</ul>
+						</li>
+						<li>sub sub list item 03</li>
+						<li>sub sub list item 04</li>
+					</ul>
+				</li>
+				<li>sub list item 04</li>
+				<li>sub list item 05</li>
+			</ul>
+	
+		</li>
+		<li>List item6</li>
+	</ul>
+	<h2>Ordered Lists -- <code>&lt;ol&gt;</code> </h2>
+	<ol class="bdr">
+		<li>Only <code>&lt;li&gt;</code> can come as child of <code>&lt;OL&gt;</code>, no other element or content can come as direct child of ol</li>
+		<li>Inside <code>&lt;li&gt;</code>, you can flow category content</li>
+		<li>
+			<h3>This is heading is inside list item</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio repellendus consectetur error nihil reprehenderit facilis facere provident. Eveniet temporibus corrupti voluptatem commodi accusamus dolore dolores, veniam aliquam dolorem. Optio.</p>
+			<div>i am a div</div>
+			<ul>
+				<li>list item 01</li>
+				<li>list item 02
+					<ol>
+						<li>sub list item 01</li>
+						<li>sub list item 02
+							<ol>
+								<li>sub sub list item 01</li>
+								<li>sub sub list item 02</li>
+								<li>sub sub list item 03</li>
+							</ol>
+						</li>
+						<li>sub list item 03</li>
+						<li>sub list item 04</li>
+						<li>sub list item 05</li>
+					</ol>
+				</li>
+				<li>list item 03</li>
+				<li>list item 04</li>
+				<li>list item 05</li>
+				<li>list item 06</li>
+				<li>list item 07</li>
+				<li>list item 08</li>
+				<li>list item 09</li>
+				<li>list item 10</li>
+			</ul>
+		</li>
+		<li>List item4</li>
+		<li>List item5</li>
+		<li>List item6</li>
+	</ol>
+
+
+<div class="questions">
+	<ul>
+		<li>What kind of element is it?</li>
+		<li>What kind of content can come inside it</li>
+		<li>Who can be its parents</li>
+		<li>What are its default styles</li>
+		<li>Attributes</li>
+	</ul>
+</div>
+
+
+</body>
+</html>
