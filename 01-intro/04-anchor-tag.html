@@ -25,7 +25,7 @@
 	</style>
 </head>
 <body>
-	<h1>Anchor tags - an intro</h1>
+	<h1 id="top">Anchor tags - an intro</h1>
 
 <a href="01-intro.html">Intro</a>
 <a href="editing-tags.html">Editing Tags</a>
@@ -62,7 +62,7 @@
 </a>
 
 <a href="#" class="bdr">
-	<img src="pic1.jpg" class="bdr">
+	<img src="pic1.jpg?25april" class="bdr">
 </a>
 <a href="#" class="bdr">
 	<img src="pic2.jpg" class="bdr">
@@ -71,7 +71,46 @@
 	<img src="pic3.jpg" class="bdr">
 </a>
 
+<hr>
+<a name="links"></a> <!-- named anchor -->
+<a href="#top">Top</a>
+<a href="#links">Links</a>
+<a href="#about">About</a>
+<a href="#blog">Blog</a>
+<a href="#services">Services</a>
+<hr>
 
+<div>
+	<p><a href="mailto:kris@htmlden.com;kris@dzineden.com;?cc=kris@krisschool.com&bcc=someother@email.com&subject=Whatever subject you want">Email me</a></p>
+	<p><a href="tel:+919884039463">Call me</a></p>
+	<p><a href="onion.jpg" target="blank">my photo</a></p>
+	<p><a href="will-this-work.zip">my files</a></p>
+	<p><a href="simple-monthly-budget1.pdf" download>Link to a pdf document</a></p>
+	<p><a href="#" id="somelink">Dummy link</a></p>
+</div>
+
+<div class="whitespace" id="about">
+	<h1>About</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores corporis harum laboriosam est aliquid commodi consequuntur dolore eius facilis deserunt omnis nisi excepturi, porro quae, pariatur. Nemo veritatis id provident.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores corporis harum laboriosam est aliquid commodi consequuntur dolore eius facilis deserunt omnis nisi excepturi, porro quae, pariatur. Nemo veritatis id provident.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores corporis harum laboriosam est aliquid commodi consequuntur dolore eius facilis deserunt omnis nisi excepturi, porro quae, pariatur. Nemo veritatis id provident.</p>
+</div>
+
+<div class="whitespace" id="services">
+<a href="#links">TOp</a>
+	<h1>Services</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores corporis harum laboriosam est aliquid commodi consequuntur dolore eius facilis deserunt omnis nisi excepturi, porro quae, pariatur. Nemo veritatis id provident.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores corporis harum laboriosam est aliquid commodi consequuntur dolore eius facilis deserunt omnis nisi excepturi, porro quae, pariatur. Nemo veritatis id provident.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores corporis harum laboriosam est aliquid commodi consequuntur dolore eius facilis deserunt omnis nisi excepturi, porro quae, pariatur. Nemo veritatis id provident.</p>
+</div>
+
+<div class="whitespace">
+	<a name="blog"></a>
+	<h1>Blog</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores corporis harum laboriosam est aliquid commodi consequuntur dolore eius facilis deserunt omnis nisi excepturi, porro quae, pariatur. Nemo veritatis id provident.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores corporis harum laboriosam est aliquid commodi consequuntur dolore eius facilis deserunt omnis nisi excepturi, porro quae, pariatur. Nemo veritatis id provident.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores corporis harum laboriosam est aliquid commodi consequuntur dolore eius facilis deserunt omnis nisi excepturi, porro quae, pariatur. Nemo veritatis id provident.</p>
+</div>
 
 <div class="questions">
 	<ul>
@@ -82,7 +121,6 @@
 		<li>Attributes</li>
 	</ul>
 </div>
-
 
 </body>
 </html>
