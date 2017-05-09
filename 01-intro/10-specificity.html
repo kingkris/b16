@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Specificity In CSS</title>
+	<style>
+		body{
+			background-color: #f6f6a5;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+		}
+		*{color: red !important;}
+		h2{color: green}
+		.h2-demo{color: blue}
+		[title]{color: orange}
+		#title1{color: indigo}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>My Webpage</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+					<li><a href="#">Link 5</a></li>
+					<li><a href="#">Link 6</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="banner">
+			<img src="https://api.fnkr.net/testimg/1000x400/bb5ed1/FFF/?text=img+placeholder">
+			<h1>Eat, Practice, Sleep, Repeat</h1>
+		</div><!-- /.banner -->
+		<div class="content">
+			<h2>Some heading will come</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat sunt, repellendus dignissimos molestias quas eius asperiores consectetur quisquam optio! Deserunt voluptates reiciendis ex reprehenderit beatae odio sed, magnam odit!</p>
+			<h2>This is anther h2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat sunt, repellendus dignissimos molestias quas eius asperiores consectetur quisquam optio! Deserunt voluptates reiciendis ex reprehenderit beatae odio sed, magnam odit!</p>
+			<h2>one more h2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat sunt, repellendus dignissimos molestias quas eius asperiores consectetur quisquam optio! Deserunt voluptates reiciendis ex reprehenderit beatae odio sed, magnam odit!</p>
+			<ul>
+				<li>
+					<h2>this h2 is inside li</h2>
+					lits item 1
+				</li>
+				<li>lits item 2</li>
+				<li>lits item 3</li>
+				<li>lits item 4</li>
+				<li>lits item 5</li>
+			</ul>
+			<div class="dabba">
+				<h2>This h2 is inside .container .content .dabba</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, pariatur. Illo dolore ipsam consectetur cum. Repellendus, deleniti, quo. Asperiores animi, perferendis consequatur. Iste voluptate vel amet officiis. Saepe, molestiae, nihil.</p>
+				<h2 class="h2-demo">This is a h2 tag with class</h2>
+				<h2 class="h2-demo" title="some title">This is a h2 tag with class and attribute</h2>
+				<h2 class="h2-demo" title="some title" id="title1">This is a h2 tag with class , attribute and id</h2>
+				<h2 class="h2-demo" title="some title" id="title1" style="color:pink">This is a h2 tag with class, attribute, id and inline style</h2>
+			</div><!-- /.dabba -->
+		</div><!-- /.content -->
+	</div><!-- /.container -->
+</body>
+</html>
