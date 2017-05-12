@@ -1,0 +1,95 @@
+		/* This one is a CSS comment*/
+
+		/*=================================
+		=            Selectors            =
+		=================================
+		
+		selector-name{
+			css-rule : value;
+			css-rule : value;
+			css-rule : value;
+			....;
+			....;
+			....;
+		}
+
+		Universal Selectors
+			They are applied to all the html elements of that documnet
+		*{
+			css-rule : value;
+			....
+		}
+
+
+		Tag or Type Selectors
+		p{
+			css-rule : value;
+			....
+		}
+
+		Class Selectors
+		.user-defined-name{
+			css-rule : value;
+			....
+		}
+
+		id Selectors
+		#user-defined-name{
+			css-rule : value;
+			....
+		}
+
+		descendant Selectors
+		psuedo Selectors - there are two types
+			
+		1.	psuedo classes - starts with :
+					:link, :hover, :active, :focus, :first-child, :last-child, :nth-child()
+		2. 	psuedo elements - starts with ::
+					::after, ::before, ::first-line, ::first-letter, ::selection
+
+		attribute Selectors
+		[attribute-name]{
+			css-rule : value;
+			....
+		}
+		=====  End of Selectors  ======*/
+
+
+
+
+
+
+
+/*----------  Styles for Homepage blocks  ----------*/
+.blocks{
+	padding-left: 0;
+	margin: 40px 0;
+	list-style: none;
+}
+.blocks:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.blocks li{
+	width: 25%;
+	float: left;
+}
+.blocks li a{
+	display: block;
+	padding: 15px;
+	margin:15px;
+	background-color: #F4DEFF;
+	border-radius:6px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+}
+.blocks li a:hover{
+	background-color: #A700FA;
+	color:#FFF;
+}
+
+
+
+

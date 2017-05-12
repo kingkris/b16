@@ -50,10 +50,10 @@
 			css-rule : value;
 			css-rule : value;
 			css-rule : value;
-			....
-			....
-			....
-			....
+			....;
+			....;
+			....;
+			....;
 		}
 
 		Universal Selectors
@@ -90,7 +90,11 @@
 		2. 	psuedo elements - starts with ::
 					::after, ::before, ::first-line, ::first-letter, ::selection
 
-			
+		attribute Selectors
+		[attribute-name]{
+			css-rule : value;
+			....
+		}
 
 :link{}
 ::after{}
@@ -162,6 +166,22 @@
 			background-color: #bc614e;
 		}
 
+		[id]{
+			border: dotted 2px red;
+		}
+		[download]{
+			border-bottom: solid 4px green;
+		}
+		[download]:after{
+			content: " Download the file now!"
+		}
+		[class="asdf"]{
+			border-bottom: double 4px green;
+		}
+		[href="#"]{
+			color: grey !important;
+			cursor: no-drop;
+		}
 
 	</style>
 </head>
@@ -172,7 +192,7 @@
 			<ul class="site-links">
 				<li><a href="#" class="active">link 01</a></li>
 				<li><a href="#">link 02</a></li>
-				<li><a href="#">link 03</a></li>
+				<li><a href="#" id="as">link 03</a></li>
 				<li><a href="#">link 04</a></li>
 				<li><a href="#">link 05</a></li>
 				<li><a href="#">link 06</a></li>
@@ -205,7 +225,7 @@
 <p><strong>I am  a strong tag</strong></p>
 
 <h3 class="some-title">Another h3 tag</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem illum rerum doloribus non nulla modi molestiae odit obcaecati, quos quae voluptates sequi ab inventore beatae eligendi tempore quo quis debitis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod reprehenderit enim, illo illum repudiandae eius ad cupiditate officia odio distinctio quo, maiores nihil consectetur sapiente suscipit nemo assumenda beatae voluptatem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ratione placeat dolores qui voluptas esse soluta, dicta modi aliquid autem ducimus error fuga cumque corrupti! Esse hic rem excepturi commodi?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem illum rerum doloribus non nulla modi molestiae odit obcaecati, <span class="asdf">quos quae voluptates sequi ab inventore beatae eligendi tempore quo quis debitis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod reprehenderit enim, illo illum repudiandae eius ad cupiditate </span>officia odio distinctio quo, maiores nihil consectetur sapiente suscipit nemo assumenda beatae voluptatem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ratione placeat dolores qui voluptas esse soluta, dicta modi aliquid autem ducimus error fuga cumque corrupti! Esse hic rem excepturi commodi?</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem illum rerum doloribus non nulla modi molestiae odit obcaecati, quos quae voluptates sequi ab inventore beatae eligendi tempore quo quis debitis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod reprehenderit enim, illo illum repudiandae eius ad cupiditate officia odio distinctio quo, maiores nihil consectetur sapiente suscipit nemo assumenda beatae voluptatem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ratione placeat dolores qui voluptas esse soluta, dicta modi aliquid autem ducimus error fuga cumque corrupti! Esse hic rem excepturi commodi?</p>
 <div><strong>I am  a strong tag</strong></div>
 <div class="my-selector"><strong>I am  a strong tag</strong></div>
