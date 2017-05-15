@@ -1,0 +1,71 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+block related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  word-spacing: normal | <length>
+~  letter-spacing : normal | <length>
+    ^ default value is auto
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can animate
+
+~  vertical-align : baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>
+    ^ default value is baseline
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to very few elements, like img, input, td, tr, table
+    ^ you can animate
+https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
+
+
+~  text-align : left | right | center | justify
+    ^ default value is left - depends on page direction
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+
+~  text-indent
+    ^ default value is auto
+    ^ This property gets inherited
+    ^ This property can be applied to block level elements
+    ^ Can't animate
+
+~  white-space: normal | pre | nowrap | pre-wrap | pre-line
+    ^ default value is auto
+    ^ This property gets inherited
+    ^ This property can be applied to block level elements
+    ^ Can't animate
+    https://developer.mozilla.org/en/docs/Web/CSS/white-space
+
+
+~  display: block | inline | inline-block | 
+            table | table-row | table-cell | 
+            list-item | none
+    ^ default value is auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+~  content – 
+~  text-overflow - clip | ellipsis 
+
+
+
+
+auto;
+inherit;
+
+*/
+
+/* ==========================================================================
+   Demo of Block related properties
+   ========================================================================== */

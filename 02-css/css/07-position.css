@@ -1,0 +1,61 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Position related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  position: static | relative | absolute | sticky  |  fixed
+    ^ default value static
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+    eg: 
+      .someclass{position:relative}
+      .someclass{position:absolute}
+      .someclass{position:sticky}
+      .someclass{position:fixed}
+
+~  top   : <length>
+~  bottom: <length>
+~  right : <length>
+~  left  : <length>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all positioned elements
+    ^ You can animate
+
+~  z-index: auto | <integer>
+    ^ default value auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all positioned elements
+    ^ You can animate
+
+
+
+~  visibility: visible | hidden | collapse
+Applies to all elements
+overflow: visible | hidden | scroll | auto
+overflow-x
+overflow-y
+
+
+auto;
+inherit;
+
+Background related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Position related properties
+   ========================================================================== */
