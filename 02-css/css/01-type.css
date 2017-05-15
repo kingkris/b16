@@ -75,7 +75,7 @@ color values can be applied in 4 diff formats
     rgba value - eg. rgba(255,0,0,1) - css3
 
 ~  text-decoration:none | underline | overline | line-through
-    ^ default value is none, only for a tag you have underline
+    ^ default value is none, only for 'a' tag you have underline
     ^ This property gets inherited
     ^ This property can be applied to all the elements
     ^ Can't animate
@@ -169,7 +169,8 @@ html{
 /*----------  Grouping  ----------*/
 .em-wrap,
 .rem-wrap,
-.px-wrap{
+.px-wrap,
+.percentage-wrap{
 	border: solid 1px red;
 	width:940px;
 	margin:30px auto;
@@ -178,7 +179,8 @@ html{
 
 .em-wrap:before,
 .rem-wrap:before,
-.px-wrap:before{
+.px-wrap:before,
+.percentage-wrap:before{
 	content:attr(class);
 }
 
@@ -207,4 +209,70 @@ html{
 .px-wrap h5{font-size:16.6px}
 .px-wrap h6{font-size:13.4px}
 
+.percentage-wrap{font-size:30px}
+.percentage-wrap h1{font-size:200%}
+.percentage-wrap h2{font-size:150%}
+.percentage-wrap h3{font-size:117%}
+.percentage-wrap h4{font-size:100%}
+.percentage-wrap h5{font-size:83%}
+.percentage-wrap h6{font-size:67%}
 
+.percentage-wrap h1{
+  background-color: #DC7CB4;
+  transition:all 250ms ease;
+}
+.percentage-wrap h1:hover{
+  font-size:400%;
+}
+
+.vw-box{
+  background-color: #C14DDE;
+  margin:0 0 10px
+}
+.vw-demo1{width:10vw; }
+.vw-demo2{width:20vw; }
+.vw-demo3{width:30vw; }
+.vw-demo4{width:40vw; }
+.vw-demo5{width:50vw; }
+.vw-demo6{width:60vw; }
+.vw-demo7{width:70vw; }
+.vw-demo8{width:80vw; }
+.vw-demo9{width:90vw; }
+.vw-demo10{width:100vw; }
+
+
+/*----------  line-height demo  ----------*/
+.lh-demo{
+  line-height:1.4;
+}
+
+.widget{
+  width:300px;
+  border: solid 1px #CCC;
+  margin:5px auto;
+}
+.widget h2{
+  font-family: Verdana, Geneva, sans-serif;
+  font-family: 'Roboto Slab', serif;
+
+  margin:0;
+  font-size:20px;
+  font-weight:normal;
+  background-color: #136CD0;
+  color:#FFF;
+  line-height: 50px;
+}
+
+
+.font-shorthand-demo{
+/* 
+  font-style: italic;
+  font-weight:bold;
+  font-size:20px;
+  line-height:26px;
+  font-family: 'Roboto Slab', serif;
+*/
+  /* Shorthand version of font properties */
+  font: italic bold 20px/26px 'Roboto Slab', serif;
+
+}
