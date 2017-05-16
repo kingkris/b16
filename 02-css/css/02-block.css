@@ -69,3 +69,102 @@ inherit;
 /* ==========================================================================
    Demo of Block related properties
    ========================================================================== */
+
+
+
+
+.block-demo1{
+    word-spacing:50px;
+    letter-spacing:10px;
+}
+.block-demo img{
+    vertical-align: middle;
+}
+.label-txt{font-size:11px;}
+.input-chk{vertical-align: middle;}
+
+
+.bdr{
+    border: solid 1px red;
+    text-align: center;
+}
+
+.dabba{
+  width:400px;
+  border: solid 1px #CCC;
+  padding: 10px;
+  margin: 20px auto
+}
+.dabba-one{
+  text-align: justify;
+  text-indent: 40px
+}
+
+.dabba-two{
+  width:500px
+}
+
+.ws-demo{
+  white-space:pre-line
+}
+
+.bdr1{
+  border: solid 1px red
+}
+
+.dis-demo{
+  display:list-item;
+  width:300px;
+  height:80px;
+}
+
+.linkz li{
+  display:inline
+}
+
+/*----------  block demo  ----------*/
+
+.block{
+  border: solid 1px #CCC;
+  width:1000px;
+  margin:20px auto;
+  border-radius:10px;
+  padding:10px
+}
+.block a{
+  display: inline-block;
+  width:160px;
+  height:60px;
+  text-align: center;
+  background-color: #FF4AD2;
+  color:#FFF;
+  text-decoration: none;
+}
+.block a:before{
+  content:"ASd"
+}
+.block a:after{
+  content:"xyz";
+  padding-left:10px
+}
+.block .content{
+  width:1px;
+  height:60px;
+  background-color: #FF4A68;
+  color:#FFF;
+  display: none;
+}
+
+.block:hover .content{
+  width:830px;
+  display: inline-block;
+}
+
+
+.dabba-two h2{
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+}
+
+
