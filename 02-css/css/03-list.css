@@ -52,3 +52,42 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters
 /* ==========================================================================
    Demo of List related properties
    ========================================================================== */
+
+.li-demo{
+  list-style-type: devanagari;
+  list-style-position:outside;
+  list-style-image:url('../img/bullet-01.png');
+  border: solid 1px red;
+}
+.li-demo li{
+  border: dashed 1px red;
+}
+
+
+/*----------  Demo nav  ----------*/
+
+.demo-nav{
+  background-color: #B905DA;
+  padding: 20px;
+  color:#FFF;
+}
+.linkzs{
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+.linkzs li{
+  display: inline;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:14px;
+  text-transform: uppercase;
+}
+.linkzs li a{
+  color:#FFF;
+  text-decoration: none;
+}
+.linkzs li a:hover{
+  background-color: #fff;
+  color:#B905DA;
+}
+

@@ -55,6 +55,37 @@
 		=====  End of Selectors  ======*/
 
 
+html{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color:#444;
+	font-size:16px;
+	line-height: 1.4;
+}
+
+.site-header{}
+.site-header h1 {
+	text-align: center;
+}
+.site-header h1 a{
+	font-size:56px;
+	font-weight:400;
+	font-family: 'Slabo 27px', serif;
+	text-decoration: none;
+	color:#C46F00;
+}
+/*----------  main nav  ----------*/
+
+.site-header nav{
+}
+.site-header nav ul{
+	text-align: center;
+	list-style: none;
+	padding-left: 0;
+}
+.site-header nav ul li{
+	display: inline-block;
+}
 
 
 

@@ -78,3 +78,21 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 /* ==========================================================================
    Demo of Background related properties
    ========================================================================== */
+
+
+
+.dabba{
+  background-color: rgb(208, 25, 176);
+  width: 800px;
+  min-height:250px;
+  margin:20px auto;
+}
+.bg-img{
+  background-image: url('../img/icon-help.png');
+  background-repeat: no-repeat;
+  background-position: 400px 125px;
+  overflow: scroll;
+}
+
+
+
