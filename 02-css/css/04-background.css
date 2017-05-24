@@ -57,8 +57,7 @@ background [color image repeat attachment position]
 
 
 
-
-background-size – contain, cover
+Sprites - 
 background-origin – border-box, padding-box, content-box
 background-clip – 
 multiple backgrounds – CSS3
@@ -91,8 +90,102 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   background-image: url('../img/icon-help.png');
   background-repeat: no-repeat;
   background-position: 400px 125px;
-  overflow: scroll;
 }
 
+/*----------  Simple nav  ----------*/
 
+.simple-nav{
+  background-color: #005b9f;
+
+  text-align: center;
+
+  border-bottom: solid 4px #ff9d3f;
+  padding: 15px;
+}
+
+.simple-nav a{
+  background-color: rgba(255,255,255,.75);
+  color:#666;
+  text-decoration: none;
+  line-height: 30px;
+  font-size:14px;
+  text-transform: uppercase;
+  display: inline-block;
+
+  padding:0 15px;
+  transition: all 250ms ease;
+  border-radius:15px;
+}
+.simple-nav a.active{
+  background-color: #f57c00;
+  color:#FFF;
+}
+.simple-nav a:hover{
+  background-color: #f57c00;
+  color:#FFF;
+}
+
+/*----------  background image demo  ----------*/
+
+.demo1{
+  background-color: #DCDCDC;
+  background-image: url('../img/banner.jpg');
+  background-repeat: repeat;
+  background-attachment: scroll;
+
+  width:95%;
+  height:500px;
+  margin:0 auto;
+  border: solid 5px #C42DF5;
+}
+.demo2{
+  background-color: #DCDCDC;
+  background-image: url('../img/horse-1210043_1920.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+  width:95%;
+  height:500px;
+  margin:0 auto;
+  border: solid 5px #C42DF5;
+}
+.demo3{
+  background-color: #DCDCDC;
+  background-image: url('../img/bg-grid.jpg');
+  background-attachment: scroll;
+
+  width:95%;
+  height:500px;
+  margin:0 auto;
+  border: solid 5px #C42DF5;
+}
+
+/*----------  Background position  ----------*/
+.demo4{
+  background-color: #DCDCDC;
+  background-image: url('../img/bg-grid.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+  /* background: #DCDCDC url('../img/bg-grid.jpg') no-repeat fixed 50% 0%; */
+
+
+  width:55%;
+  height:400px;
+  margin:0 auto;
+  border: solid 5px #C42DF5;
+}
+
+/*----------  Background Size  ----------*/
+.demo5{
+  background-color: #DCDCDC;
+  background-image: url('../img/horse-1210043_1920.jpg');
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+
+  width:55%;
+  height:400px;
+  margin:0 auto;
+  border: solid 5px #C42DF5;
+}
 
