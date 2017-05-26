@@ -140,18 +140,10 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   border-width: 20px;
 }
 
-.arrow-top{
-  border-color: transparent transparent green transparent;
-}
-.arrow-right{
-  border-color: transparent transparent transparent green;
-}
-.arrow-bottom{
-  border-color: green transparent transparent transparent;
-}
-.arrow-left{
-  border-color: transparent green transparent transparent;
-}
+.arrow-top    {border-color: transparent transparent green transparent; }
+.arrow-right  {border-color: transparent transparent transparent green; }
+.arrow-bottom {border-color: green transparent transparent transparent; }
+.arrow-left   {border-color: transparent green transparent transparent; }
 
 .circle{
   width:100px;
@@ -176,14 +168,14 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   border-radius:50%;
 }
 
-.arc-top{border-radius: 50% 0 0 0}
-.arc-right{border-radius: 0 50% 0 0}
-.arc-bottom{border-radius: 0 0 50% 0}
-.arc-left{border-radius: 0 0 0 50% }
-.arc-topright{border-radius: 50% 50% 0 0 }
-.arc-topleft{border-radius: 50% 0 0 50% }
-.arc-rightleft{border-radius: 0 50% }
-.arc-topbottom{border-radius: 50% 0 }
+.arc-top        {border-radius: 50% 0 0 0}
+.arc-right      {border-radius: 0 50% 0 0}
+.arc-bottom     {border-radius: 0 0 50% 0}
+.arc-left       {border-radius: 0 0 0 50% }
+.arc-topright   {border-radius: 50% 50% 0 0 }
+.arc-topleft    {border-radius: 50% 0 0 50% }
+.arc-rightleft  {border-radius: 0 50% }
+.arc-topbottom  {border-radius: 50% 0 }
 
 
 
