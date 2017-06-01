@@ -163,12 +163,172 @@ body{
   text-decoration: none;
 }
 
+/*----------  For Facebook Sidebar  ----------*/
 
+.container{
+  margin:20px 0;
+  border: solid 4px red;
+}
+.one-half{
+  width:50%;
+  float: left;
+  border: solid 2px green;
+  padding:20px;
+}
+.one-half:after,
+.container:after,
+.widget .title:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.container .one-half:first-child{
+  border-right: dashed 1px #CCC;
+}
+.one-half h1 {
+  margin:20px 0;
+  font-size:40px;
+  border-bottom: solid 5px #3607AF;
+  text-align: center;
+}
+.original{
+  text-align: center;
+}
+/**
+ * For sidebar
+ * ----------------
+ */
+.sidebar{
+  width: 280px;
+  background-color: #fff;
+  border: solid 1px #DFDFDF;
+  float: right;
+  padding:10px 10px 0;
+}
+.widget{
+  border-bottom: solid 1px #CCC;
+  margin:0 0 10px;
 
-
-
-
-
+}
+.widget .title{
+}
+.widget .title h3{
+  font-size:14px;
+  text-transform: uppercase;
+  color:#444;
+  margin:0 0 6px;
+  float: left;
+}
+.widget .title a{
+  font-size:13px;
+  float: right;
+}
+/**
+ * trending news
+ * ----------------
+ */
+.news{
+  margin:0;
+  padding-left: 0;
+  list-style: none;
+}
+.news li{
+  padding: 0 0 10px 25px;
+  background-image: url('../img/arrow.png');
+  background-repeat: no-repeat;
+  background-position: 2px 5px;
+}
+.news li a{
+  font-size:13px;
+  text-decoration: none;
+  line-height: 16px;
+  display: block;
+  color:#666;
+}
+.news li a strong{
+  color:#040DBA;
+}
+.news li a:hover strong{
+  color:#050C89;
+  text-decoration: underline;
+}
+/**
+ * See More Link
+ * ----------------
+ */
+.see-more {
+  font-size:13px;
+  margin-bottom: 10px;
+}
+.see-more a{
+  text-decoration: none;
+  padding-left: 25px;
+  position: relative;
+}
+.see-more a:hover{
+  text-decoration: underline;
+}
+.see-more a:before{
+  position: relative;
+  position: absolute;
+  width:0;
+  height:0;
+  border-style: solid;
+  border-width: 6px;
+  border-color: blue transparent transparent transparent;
+  left:0;
+  top: 5px;
+  content:"";
+}
+/*----------  People list  ----------*/
+.people{
+  padding-left: 0;
+  margin:0;
+  border: dashed 1px red;
+  list-style: none;
+}
+.people li{
+  border: solid 1px blue;
+  margin-bottom: 10px;
+}
+.people li img{
+  border: solid 1px green;
+  float: left;
+}
+.people li .details{
+  border: solid 1px red;
+  margin-left: 60px;
+}
+.details h3{
+  margin:0;
+  border: solid 1px red;
+  font-size:14px;
+}
+.details h3 a{
+  text-decoration: none;
+}
+.grey-link{
+  font-size:13px;
+  color:#666;
+  text-decoration: none;
+  display: block;
+  border: solid 1px red;
+  margin:4px 0
+}
+.btn{
+  border: solid 1px #CCC;
+  border-radius:4px;
+  background-color: #E4E1E1;
+  font-size: 13px;
+  font-weight:bold;
+  color:#444;
+  text-decoration: none;
+  padding:4px 10px 4px 25px;
+  display: inline-block;
+  background-image: url('../img/arrow.png');
+  background-repeat: no-repeat;
+  background-position: 6px center;
+}
 
 /* ==========================================================================
    Helper classes
