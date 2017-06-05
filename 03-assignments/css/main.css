@@ -167,12 +167,10 @@ body{
 
 .container{
   margin:20px 0;
-  border: solid 4px red;
 }
 .one-half{
   width:50%;
   float: left;
-  border: solid 2px green;
   padding:20px;
 }
 .one-half:after,
@@ -185,6 +183,7 @@ body{
 .container .one-half:first-child{
   border-right: dashed 1px #CCC;
 }
+.row h1,
 .one-half h1 {
   margin:20px 0;
   font-size:40px;
@@ -329,6 +328,71 @@ body{
   background-repeat: no-repeat;
   background-position: 6px center;
 }
+
+
+
+/*----------  For Modal Window  ----------*/
+
+.row{
+  padding:30px 15px;
+}
+
+.bg-lightgreen{background-color: lightgreen; }
+.bg-lightblue{background-color: lightblue; }
+
+
+.modal{
+  border: solid 1px #0072c6;
+  background-color: #fff;
+  width:476px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,.35);
+  padding: 40px 25px 18px
+}
+.modal h2{
+  color: #0072c6;
+  margin:0;
+  font-size:26px;
+  line-height: 1;
+  border: solid 1px red;
+}
+.modal p{
+  border: solid 1px red;
+}
+.modal ul{
+  border: solid 1px red;
+  list-style: none;
+  padding-left: 0;
+}
+.modal ul li{
+  margin-bottom: 5px;
+  font-size:14px;
+}
+.modal ul a{
+  border: solid 1px #ababab;
+  color:#444;
+  text-decoration: none;
+  width:77px;
+  display: inline-block;
+  font-size:13px;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 15px;
+}
+.modal ul a:hover{
+  border-color: #b1d6f0;
+  background-color: #cde6f7;
+}
+
+.modal ul a span{
+  text-decoration: underline;
+}
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
