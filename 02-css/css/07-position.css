@@ -59,3 +59,99 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 /* ==========================================================================
    Demo of Position related properties
    ========================================================================== */
+
+.bg-green{background-color: green;}
+.bg-blue{background-color: blue;}
+.bg-pink{background-color: pink;}
+.bg-orange{background-color: orange;}
+.bg-yellow{background-color: yellow;}
+.bg-violet{background-color: violet;}
+.bg-crimson{background-color: crimson;}
+.bg-lightgreen{background-color: lightgreen;}
+.bg-lightblue{background-color: lightblue;}
+
+
+
+/*----------  static  ----------*/
+
+.pos-static{
+  border: solid 1px #0A24C0;
+  position: static;
+  top:30px;
+  bottom:2000px;
+}
+ /* top right bottom left has no effect on position static */
+
+
+/*----------  relative  ----------*/
+
+.pos-relative{
+  border: solid 1px #0A24C0;
+  color:#FFF;
+  position: relative;
+}
+
+.pos-relative.bg-blue{
+  bottom:20px;
+}
+.pos-relative.bg-yellow{
+  left:100px;
+  right:100px;
+  bottom:100px;
+  top:100px;
+}
+
+/*----------  absolute  ----------*/
+
+.pos-absolute{
+  border: solid 1px #0A24C0;
+  color:#FFF;
+}
+
+.pos-absolute.bg-blue{
+  position: absolute;
+  right:0;left:0;
+  bottom:0;top:0;
+  width:200px;
+  height:50px;
+  margin:auto;
+}
+
+.parent{
+  width:600px;
+  margin:40px auto;
+  border: solid 3px red;
+  background-color: pink;
+  padding: 30px;
+  position: relative;
+  min-height: 400px
+}
+
+.child.bg-green{
+  position:absolute;
+  left:10px;right:10px;
+  top:10px;bottom:10px;
+
+}
+.child.bg-blue,
+.child.bg-crimson{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  font-size:13px;
+  color:#FFF;
+  text-align: center;
+  line-height: 80px;
+  position: absolute;
+  top:0;bottom:0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.child.bg-blue{
+  left:-40px
+}
+
+.child.bg-crimson{
+  right:-40px
+}
+

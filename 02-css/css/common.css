@@ -122,5 +122,18 @@ html{
 }
 
 
+/*----------  Sub-title  ----------*/
+
+
+.sub-title{
+	border-bottom: solid 3px #E0E0E0;
+}
+.sub-title span{
+	background-color: #E0E0E0;
+	padding:0 15px;
+	font-style: italic;
+	font-weight:300
+}
+
 
 

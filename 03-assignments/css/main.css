@@ -391,7 +391,51 @@ body{
 
 
 
+/*----------  Sample  ----------*/
 
+.sample{
+  width:600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: solid 1px red;
+  padding:15px 0;
+}
+.sample:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.rating,
+.share{
+  border: solid 1px green;
+}
+
+.rating{
+  float: left;
+}
+.share{
+  margin-left: 370px;
+}
+
+.input-box{
+  clear: both;
+  border: solid 1px #CCC;
+  position: relative;
+  margin-bottom: 200px;
+}
+.input-box input{
+  width:100%;
+  border: none;
+  padding:5px 10px
+}
+.input-box span{
+  position: absolute;
+  right:0;
+  top:0; bottom:0;
+  width:30px;
+  text-align: center;
+}
 
 
 /* ==========================================================================
