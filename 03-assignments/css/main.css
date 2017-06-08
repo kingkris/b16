@@ -88,6 +88,59 @@ textarea {
 body{
   background-color: #e9eaed;
 }
+
+/*===================================
+=            Site header            =
+===================================*/
+.site-header{
+  background-color: #0bbcff;
+  border-bottom: solid 4px #9c27b0;
+  margin-bottom: 20px;
+}
+.containerz{
+  width:1000px;
+  margin:0 auto;
+  border: solid 1px red;
+}
+.containerz:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.logo{
+  float:left;
+  border: solid 1px white;
+}
+.social-links{
+  float: right;
+  border: solid 1px white;
+}
+.linkz{
+  clear: left;
+  float:left;
+  border: solid 1px white;
+}
+.help{
+  clear: right;
+  float: right;
+  border: solid 1px white;
+}
+
+
+/*=====  End of Site header  ======*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 .wrapper{
   background-color: #fff;
 }
