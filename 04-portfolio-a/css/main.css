@@ -123,10 +123,6 @@ textarea {
   display: block;
   margin-top: 12px;
 }
-.social-linkz{
-  float: right;
-  border: solid 1px #FFF;
-}
 .site-header nav{
   float: left;
   clear: both;
@@ -137,13 +133,67 @@ textarea {
   clear: right;
   border: solid 1px #FFF;
 }
-
+/*====================================
+=            Header Links            =
+====================================*/
 .site-header ul{
   padding-left: 0;
   margin:0;
   list-style: none;
 }
+.site-header ul li{
+  float: left;
+}
 
+
+/*----------  Social links  ----------*/
+.site-header .social-linkz{
+  float: right;
+  margin-top: 20px;
+  border: solid 1px #FFF;
+}
+.social-linkz li{}
+.social-linkz li a{
+  position:relative;
+  width:25px;
+  height:25px;
+  display: block;
+  margin-left: 15px;
+}
+.social-linkz li a span{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+.social-linkz li a:before{
+  width:25px;
+  height:25px;
+  border-radius: 50%;
+  background-color: #b6b6b6;
+  content:"";
+  position: absolute;
+  left:0;
+  top: 0;
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+}
+.social-linkz li.fb a:before{background-position: 8px -14px; }
+.social-linkz li.tw a:before{background-position: -34px -12px; }
+.social-linkz li.li a:before{background-position: 6px -34px; }
+.social-linkz li.pi a:before{background-position: -13px -13px; }
+
+.social-linkz li a:hover:before{
+  background-color: #C80AB4;
+}
+
+
+/*=====  End of Header Links  ======*/
 
 
 
