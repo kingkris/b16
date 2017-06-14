@@ -135,5 +135,27 @@ html{
 	font-weight:300
 }
 
+/*=======================================
+=            Psuedo Selctors            =
+=======================================*/
+
+::-moz-selection {
+  color: gold;
+  background: red;
+}
+::selection {
+  color: gold;
+  background: red;
+}
+
+.site-header h1::before{
+	content:"\0394";
+}
+.site-header h1::after{
+	content:"\0394";
+}
+
+
+/*=====  End of Psuedo Selctors  ======*/
 
 
