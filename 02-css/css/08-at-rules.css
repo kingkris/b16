@@ -1,0 +1,220 @@
+@import url('font-awesome.css');
+
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+CSS @ Rules
++++++++++++++++++++++++++++++++++++++++++++
+
+    1.  @charset
+    2.  @fontface
+    3.  @import
+    4.  @media
+
+
+
+
+Important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/At-rule
+
+https://css-tricks.com/the-at-rules-of-css/
+
+https://css-tricks.com/snippets/html/glyphs/
+
+
+
+
+
+*/
+
+/* ==========================================================================
+   Demo of Position related properties
+   ========================================================================== */
+
+.bg-green{background-color: green;}
+.bg-blue{background-color: blue;}
+.bg-pink{background-color: pink;}
+.bg-orange{background-color: orange;}
+.bg-yellow{background-color: yellow;}
+.bg-violet{background-color: violet;}
+.bg-crimson{background-color: crimson;}
+.bg-lightgreen{background-color: lightgreen;}
+.bg-lightblue{background-color: lightblue;}
+
+.container{
+  background-color: #E9E9E9;  
+}
+*{
+  box-sizing: border-box;
+}
+.wrapper{
+  border: solid 1px red;
+}
+
+@media (min-width:768px){
+  .wrapper{
+    width:768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width:980px){
+  .wrapper{
+    width:980px;
+  }
+}
+@media (min-width:1200px){
+  .wrapper{
+    width:1170px;
+  }
+}
+
+.products:after{
+ display: block;
+ content: "";
+ clear: both;
+}
+.product{
+  padding:10px;
+}
+@media (min-width:640px) {
+  .product{
+    float: left;
+    width:50%;
+  }
+}
+@media (min-width:768px) {
+  .product{
+    width:33.333%;
+  }
+}
+.wrap{
+  padding:10px;
+  background-color: #fff;
+  border: solid 1px #CCC;
+}
+.price{}
+.price span{
+  font-size:20px;
+}
+.price span:before{
+  content:"\20B9";
+  font-size:16px;
+}
+
+.price .original{
+  font-size:16px;
+  color:#999;
+  text-decoration: line-through;
+}
+.price .original:before{
+  color:#999;
+}
+
+.price .discounted{
+  color:#258A02;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+/*----------  Fonts  ----------*/
+
+.services{
+  border: dotted 1px green;
+}
+.services h3{
+  text-align: center;
+  color:#1845D9
+}
+.service{
+  border: dotted 1px blue;
+  padding-left: 80px;
+  margin-bottom: 20px;
+  position: relative;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), 
+       url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), 
+       url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), 
+       url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), 
+       url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'b16-icons';
+  src:
+    url('../fonts/b16-icons.ttf?4viss6') format('truetype'),
+    url('../fonts/b16-icons.woff?4viss6') format('woff'),
+    url('../fonts/b16-icons.svg?4viss6#b16-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+.service:before{
+  font-family: 'b16-icons' !important;
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  background-color: #fff;
+  position: absolute;
+  left:10px;
+  top:0;bottom:0;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  line-height: 45px;
+  color:purple;
+  font-size:30px
+}
+.service1:before{content: "\e900"; }
+.service2:before{content: "\e903"; }
+.service3:before{content: "\e905"; }
+.service h4{
+  color:#7212B6
+}
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'b16-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-aperture:before  {content: "\e900"; }
+.icon-cog:before       {content: "\e901"; }
+.icon-crosshair:before {content: "\e902"; }
+.icon-globe:before     {content: "\e903"; }
+.icon-life-buoy:before {content: "\e904"; }
+.icon-sun:before       {content: "\e905"; }
+.icon-sunrise:before   {content: "\e906"; }
+.icon-target:before    {content: "\e907"; }
+
+
+
