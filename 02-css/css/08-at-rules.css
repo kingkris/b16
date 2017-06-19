@@ -19,6 +19,8 @@ CSS @ Rules
     3.  @import
     4.  @media
 
+    5.  @keyframes
+
 
 
 
@@ -217,4 +219,24 @@ https://css-tricks.com/snippets/html/glyphs/
 .icon-target:before    {content: "\e907"; }
 
 
+/*----------  Banner  ----------*/
 
+.banner{
+  border: solid 5px #5507BF;
+  margin:30px 0;
+  position: relative;
+}
+.banner img{
+  max-width:100%;
+  height:auto;
+  display: block;
+}
+.banner-txt{
+  position: absolute;
+  background-color: rgba(0,0,0,.75);
+  color:#FFF;
+  width:400px;
+  left:0;
+  top:20%;
+  padding:0 20px
+}
