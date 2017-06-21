@@ -1,0 +1,146 @@
+
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+CSS Animations
++++++++++++++++++++++++++++++++++++++++++++
+each of the properties of the shorthand:
+    transition-delay: 0s
+    transition-duration: 0s
+    transition-property: all
+    transition-timing-function: ease
+
+
+
+ Function values 
+ ___________________________
+transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+transform: translate(12px, 50%);
+transform: translateX(2em);
+transform: translateY(3in);
+transform: scale(2, 0.5);
+transform: scaleX(2);
+transform: scaleY(0.5);
+transform: rotate(0.5turn);
+transform: skew(30deg, 20deg);
+transform: skewX(30deg);
+transform: skewY(1.07rad);
+transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+transform: translate3d(12px, 50%, 3em);
+transform: translateZ(2px);
+transform: scale3d(2.5, 1.2, 0.3);
+transform: scaleZ(0.3);
+transform: rotate3d(1, 2.0, 3.0, 10deg);
+transform: rotateX(10deg);
+transform: rotateY(10deg);
+transform: rotateZ(10deg);
+transform: perspective(17px);
+
+ Multiple function values 
+transform: translateX(10px) rotate(10deg) translateY(5px);
+
+
+
+
+Important links
++++++++++++++++++++++++++++++++++++++++++++
+
+http://www.css3generator.com/ 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transition?v=control
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function
+
+
+
+
+
+*/
+
+/* ==========================================================================
+   Demo of Animation related properties
+   ========================================================================== */
+*{
+  box-sizing: border-box;
+}
+
+.boxa{
+  width:100px;
+  height:100px;
+  background-color: #EDEDED;
+  margin:20px auto;
+  border: solid 1px #ccc;
+  text-align: center;
+  line-height: 100px;
+  transition: 250ms 250ms all ease-in;
+}
+.boxa:hover{
+  width:200px;
+  height:200px;
+  background-color: #359600;
+  border: solid 5px #2E00A2;
+  line-height: 200px;
+  border-radius:50%;
+}
+
+.wrapper{
+  padding: 15px;
+  margin:0 15px;
+  background-color: #EFD7FF;
+  border: solid 1px #D4D4D4;
+  border-radius:10px;
+  transition: 250ms all ease; 
+}
+@media (min-width:768px) {
+  .wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 738px
+  }
+}
+@media (min-width:980px) {
+  .wrapper{
+    width: 950px
+  }
+}
+
+
+/*----------  Transform  ----------*/
+.box{
+  width:100px;
+  height:100px;
+  margin:20px auto;
+  border: dashed 1px red;
+}
+.box-inner{
+  height:98px;
+  line-height: 100px;
+  background-color: rgba(151,200,20,.7);
+  color:#FFF;
+  text-align: center;
+  transition:250ms all ease;
+}
+.box-inner1:hover{
+  transform: translate(30px, 50px)
+}
+.box1:hover .box-inner{
+  transform: translate(30px, 50px)
+}
+.box-inner2:hover{
+  transform: translatex(30px)
+}
+.box-inner3:hover{
+  transform: translatey(30px)
+}
+
+.box-inner4:hover{
+  transform: scale(1.5) rotate(.5turn);
+}
