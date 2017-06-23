@@ -59,6 +59,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/transition?v=control
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function
 
+https://css-tricks.com/almanac/properties/t/transform/
+
+https://desandro.github.io/3dtransforms/
+
+https://tympanus.net/Tutorials/OriginalHoverEffects/index.html
+
 
 
 
@@ -144,3 +150,52 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function
 .box-inner4:hover{
   transform: scale(1.5) rotate(.5turn);
 }
+
+
+/*----------  @Keyframes  ----------*/
+
+@keyframes backflip{
+  from, to {
+    transform:scale(.2);
+    left:0;
+    bottom: 0;
+    border-radius:0;
+  }
+  25% {
+    transform:scale(.75) rotate(180deg) ;
+    left:25%;
+    bottom: 25%;
+  }
+  60% {
+    transform:scale(1.25) rotate(360deg) ;
+    left:50%;
+    bottom: 50%;
+    border-radius:50%;
+  }
+}
+
+.backflipped{
+  width:100px;
+  height:100px;
+  text-align: center;
+  background-color: #EF11E2;
+  position: fixed;
+  /* animation:3s ease-in 0s infinite alternate backflip; */
+  animation:3s ease-in 0s 3 alternate backflip;
+}
+
+
+
+
+.bg-lightgreen{background-color: lightgreen;}
+.bg-lightblue{background-color: lightblue;}
+
+.row{
+}
+.one-half{
+  float: left;
+  width:50%;
+  min-height:250px;
+  padding:30px;
+}
+
