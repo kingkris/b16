@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS Animations | CSS World</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/13-responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Slabo+27px" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+	<h1><a href="index.html">CSS World</a></h1>
+	<nav>
+		<ul>
+			<li><a href="type.html">Type</a></li>
+			<li><a href="block.html">Block</a></li>
+			<li><a href="list.html">List</a></li>
+			<li><a href="background.html">Background</a></li>
+			<li><a href="border.html">Border</a></li>
+			<li><a href="box.html">Box</a></li>
+			<li><a href="position.html">POsitions</a></li>
+			<li><a href="at-rules.html">@Rules</a></li>
+			<li><a href="animations.html">Animation</a></li>
+			<li><a href="flex.html">Flex</a></li>
+			<li><a href="grids.html">Grids</a></li>
+			<li><a href="video-audio-canvas.html">Video, Audio, Canvas</a></li>
+			<li class="active"><a href="responsive-layout.html">Responsive Layouts</a></li>
+		</ul>
+	</nav>
+</header><!-- /.site-header -->
+<div class="container">
+	<h1>Responsive Layouts</h1>
+
+	<hr>
+	<h2>Resposnsive images</h2>
+	<h2 class="sub-title"><span>Demo of</span> image maps asd</h2>
+	<div>
+  <img src="img/image-maps.jpg" alt="banner" usemap="#Map">
+  <map name="Map">
+    <area shape="rect" coords="826,216,1010,317" href="http://www.htmlden.com/">
+    <area shape="circle" coords="887,109,76" href="http://www.google.com" target="_blank">
+    <area shape="poly" coords="266,170,298,179,322,153,353,157,386,170,408,202,430,207,441,308,279,279" href="http://www.gifts.com">
+  </map>
+  </div>
+
+	<h2 class="sub-title"><span>Demo of</span> Regular way</h2>
+	<div class="banner">
+		<img src="img/banner-05-large.jpg" alt="banner">
+	</div>
+
+	<h2 class="sub-title"><span>Demo of</span> srcset</h2>
+	<div class="banner">
+		<img src="img/banner-05-medium.jpg" 
+		     srcset="img/banner-05-small.jpg 400w, 
+		     				 img/banner-05-medium.jpg 768w,
+		             img/banner-05-large.jpg 1200w" alt="a lighthouse">
+	</div>
+
+	<h2 class="sub-title"><span>Demo of</span> picture</h2>
+	<div class="banner">
+		<picture>
+		  <source media="(max-width: 540px)" srcset="img/banner-05-small.jpg">
+		  <source media="(max-width: 799px)" srcset="img/banner-05-medium.jpg">
+		  <source media="(min-width: 800px)" srcset="img/banner-05-large.jpg">
+		  <img src="img/banner-05-medium.jpg" alt="Chris standing up holding his daughter Elva">
+		</picture>
+	</div>
+	<h2 class="sub-title"><span>Demo of</span> figure and figcaption</h2>
+
+	<figure class="fig-demo">
+		<img src="img/banner-05-medium.jpg" alt="">
+		<figcaption>
+			<p>Figcaption should always be either first child or last child of figure tag</p>
+		</figcaption>
+	</figure>
+	<h2 class="sub-title"><span>Demo of</span> header and footer</h2>
+
+	<article>
+		<header>
+			<h2>Title of the Article</h2>
+			<div>By: <a href="#">KriShne Gowda NL</a> on <time>4<sup>th</sup> July</time></div>
+		</header>
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde dicta beatae explicabo, dolor necessitatibus quisquam temporibus eaque obcaecati eos aspernatur, dolores ipsa perspiciatis vero consequuntur aperiam voluptatem distinctio, harum quas.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde dicta beatae explicabo, dolor necessitatibus quisquam temporibus eaque obcaecati eos aspernatur, dolores ipsa perspiciatis vero consequuntur aperiam voluptatem distinctio, harum quas.</p>
+		</div>
+		<footer>
+			<p>No Comments yet, <a href="#">be the first one to comment</a></p>
+		</footer>
+	</article>
+
+
+</div><!-- /.container -->
+<footer class="site-footer">
+	<p>&copy; 2017 - KriS' School of Web, all rights reserved</p>
+</footer><!-- /.site-footer -->
+
+
+
+
+</body>
+</html>

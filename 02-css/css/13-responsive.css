@@ -1,0 +1,49 @@
+
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Audio
++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+Important links
++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+*/
+
+/* ==========================================================================
+   Demo of Animation related properties
+   ========================================================================== */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+}
+.banner{}
+.banner img{
+  width:100%;
+  height:auto;
+}
+
+.fig-demo{
+  border: solid 1px red;
+}
+
+
