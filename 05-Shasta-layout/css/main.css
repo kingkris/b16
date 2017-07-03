@@ -1,0 +1,297 @@
+/*
+ * This code is done using html5boilerplate, bootstrap 4 and other fixes.
+ * We at dzineden use this code as the base for our websites and apps,
+ */
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+html {font-size: 1em;}
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #333;
+}
+p {margin-bottom: 1.3em;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: 'Roboto Slab', serif;
+}
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+h2 {font-size: 2.369em;}
+h3 {font-size: 1.777em;}
+h4 {font-size: 1.333em;}
+small, .font_small {font-size: 0.75em;}
+
+
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*----------  Common Styles  ----------*/
+
+
+
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  border: dotted 1px red;
+}
+@media (min-width:768px) {
+  .container{
+    width:768px;
+  }
+}
+@media (min-width:980px) {
+  .container{
+    width:980px;
+  }
+}
+.container:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+/*----------  Site-header  ----------*/
+
+.site-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,255,0,.5);
+  z-index: 100;
+}
+
+
+
+.banner{
+  position: relative;
+}
+.banner img{
+  width:100%;
+  height:auto;
+}
+
+.welcome-text{
+  position: absolute;
+  left:10%;
+  right:10%;
+  top:30%;
+  border: dotted 1px red;
+  text-align: center;
+  background-color: rgba(0,255,0,.5);
+  font-size:14px;
+}
+@media (min-width:768px) {
+  .welcome-text{
+    left:25%;
+    right:25%;
+    top:40%;
+    font-size:18px;
+  }
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    p:first-letter,
+    div:first-letter,
+    blockquote:first-letter,
+    li:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
