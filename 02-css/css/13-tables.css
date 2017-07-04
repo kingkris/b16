@@ -1,0 +1,122 @@
+
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Audio
++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+Important links
++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+*/
+
+/* ==========================================================================
+   Demo of Animation related properties
+   ========================================================================== */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+}
+
+
+.tbl1{
+  border: solid 1px red;
+  border-spacing: 10px;
+  background-color: #D8D6D6;
+}
+.tbl1 th{
+  border: solid 1px red;
+  background-color: #1319FD;
+  color: #FFF
+}
+.tbl1 td{
+  border: solid 1px red;
+  background-color: #fff;
+}
+
+.tbl2{
+  width: 90%;
+  margin:20px auto;
+  border: solid 1px #CCC;
+  border-collapse: collapse;
+}
+.tbl2 caption{
+  background-color: #D9D9D9;
+  font-size: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.tbl2 th{
+  background-color: #BCBCBC;
+  font-size:16px;
+  padding: 6px 2px;
+  border: solid 1px #d9d9d9;
+}
+.tbl2 td{
+  border: solid 1px #BCBCBC;
+  padding:5px;
+  font-size:14px;
+}
+
+.tbl2 tr:nth-child(odd){
+  background-color: #F6E8FF;
+}
+.tbl2 tr:nth-child(even){
+  background-color: #E8E8FF;
+}
+.tbl2 tr:hover{
+  background-color: #D4FDCF;
+  cursor: pointer;
+}
+
+.tbl2-sl      {width:60px; }
+.tbl2-name    {}
+.tbl2-email   {width:120px; }
+.tbl2-mobile  {width:80px; }
+.tbl2-bday    {width:100px; }
+.tbl2-city    {width:120px; }
+
+
+
+.outer{
+  margin:50px 0;
+  padding:50px;
+  background-color: #E3D0FF;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width:100%;
+}
+
+.wrap{
+  width:700px;
+  margin:20px auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #fff;
+}
+
+.ta-r{
+  text-align: right;
+  vertical-align: top;
+  padding:10px;
+}
+
