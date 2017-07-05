@@ -58,6 +58,7 @@ body{
   margin:20px auto;
   border: solid 1px #CCC;
   border-collapse: collapse;
+  empty-cells: 
 }
 .tbl2 caption{
   background-color: #D9D9D9;
@@ -119,4 +120,11 @@ body{
   vertical-align: top;
   padding:10px;
 }
+
+.tbl3{
+  empty-cells:hide;
+}
+
+
+
 
