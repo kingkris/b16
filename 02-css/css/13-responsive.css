@@ -102,3 +102,34 @@ body{
     width:25%;
   }
 }
+
+
+
+.second-nav{
+  background-color: #2650ED;
+  color: #FFF;
+  padding:10px;
+  text-align: center;
+}
+.second-nav a{
+  color: #FFF;
+  padding:10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+
+body {
+  counter-reset: chapter;
+}
+h1 {
+  counter-increment: chapter;
+}
+h1:before {
+  content: counter(chapter );
+}
+
+
+
+

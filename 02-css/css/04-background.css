@@ -189,3 +189,54 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
   border: solid 5px #C42DF5;
 }
 
+/*----------  Background Clip  ----------*/
+.demo6{
+  background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-clip:content-box;
+  background-origin:padding-box;
+  
+  padding:20px;
+  width:55%;
+  height:300px;
+  margin:0 auto;
+  border: solid 15px rgba(0,245,0,.5);
+}
+
+/*----------  Multiple Backgrounds  ----------*/
+.demo7{
+  background-image:url('../img/diamond-pattern.png'), url('../img/diagnal-lines-pattern.png'), url('../img/banner.jpg');
+  background-repeat:repeat, repeat, no-repeat;
+  background-origin:padding-box, padding-box, border-box;
+  background-attachment: fixed, scroll, fixed;
+
+  padding:20px;
+  width:55%;
+  height:300px;
+  margin:0 auto;
+  border: solid 15px rgba(0,245,0,.5);
+}
+
+/*----------  Gradient Backgrounds  ----------*/
+.demo8{
+  background: linear-gradient(23deg, #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%);
+
+  padding:20px;
+  width:55%;
+  height:300px;
+  margin:0 auto;
+  border: solid 15px rgba(0,245,0,.5);
+  transition: all 250ms ease;
+}
+.demo8:hover{
+  background: linear-gradient(90deg, #0775BD 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%);
+}
+
+
+
+
+.spacer{
+  margin:20px;
+  min-height:300px;
+  border-left: dotted 1px red;
+}
