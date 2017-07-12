@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Specificity Demo</title>
+
+<style>
+	body{
+		margin:0;
+		color: grey;
+	}
+	h1 									{color: green; }
+	.site-header h1 		{color: blue; }
+	.title 							{color: red; }
+	#page-title 				{color: violet; }
+	#page-title 				{color: yellow; }
+
+
+	h3 + ul 						{color: red;}
+
+
+
+.nav-bar{
+	background-color: #B008AA;
+	border-bottom: solid 10px #1D3DB6;
+}
+.menu{
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+.menu:after{
+	display: block;
+	clear: both;
+	content: ""
+}
+.menu > li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	position: relative;
+}
+.menu > li.has-submenu:after{
+	content: "";
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	border-right: solid 1px #FFF;
+	border-bottom: solid 1px #FFF;
+	transform: rotate(45deg);
+}
+.menu > li > a{
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+	line-height: 34px;
+}
+.menu > li > a:hover,
+.menu > li:hover > a{
+	background-color: #1D3DB6;
+}
+
+.menu li .submenu{
+	position: absolute;
+	background-color: #1D3DB6;
+	width: 160px;
+	left: 0;right: 0;
+	top: 34px;
+	list-style: none;
+	padding: 5px;
+	margin: 0 auto;
+	display: none;
+}
+.menu li:hover .submenu{
+	display: block;
+}
+.submenu li{
+	text-align: left;
+}
+.submenu li a{
+	display: block;
+	line-height: 28px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 13px;
+	padding: 0 10px;
+	text-decoration: none;
+	border-bottom: solid 1px #6578BE;
+}
+.submenu li a:hover{
+	color: #1D3DB6;
+	background-color: #fff;
+}
+
+
+
+
+.spacer{
+	min-height: 300px;
+	border-left: dotted 1px grey;
+	margin-left: 30px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+	<h1>This is Header 1</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit fugiat quia voluptas omnis enim aliquam est minus, in vero libero rerum, provident nemo consectetur voluptate suscipit officiis fuga, magnam nobis.</p>
+</header>
+
+<div class="content">
+	<h1>This is header 1</h1>
+	<h1 class="title">This is header 1</h1>
+	<h1 class="title" id="page-title">This is header 1</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolorem harum eveniet, rem molestias maxime delectus repudiandae quos et mollitia quasi sed omnis saepe ratione non totam modi, iure perspiciatis.</p>
+
+	<h3>Adjacent selector</h3>
+	<ul>
+		<li>list itemsadasd 01</li>
+		<li>list itemsadasd 02</li>
+		<li>list itemsadasd 03</li>
+		<li>list itemsadasd 04</li>
+		<li>list itemsadasd 05</li>
+	</ul>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius possimus totam perferendis, quia laboriosam dolores enim excepturi omnis harum repudiandae saepe temporibus iure nobis iusto delectus, recusandae, consequatur culpa non.</p>
+	<ul>
+		<li>list itemsadasd 01</li>
+		<li>list itemsadasd 02</li>
+		<li>list itemsadasd 03</li>
+		<li>list itemsadasd 04</li>
+		<li>list itemsadasd 05</li>
+	</ul>
+	<h3>Direct Child Selector</h3>
+	<nav class="nav-bar">
+		<ul class="menu">
+			<li><a href="#">Link 1</a></li>
+			<li><a href="#">Link 2</a></li>
+			<li class="has-submenu"><a href="#">Link 3</a>
+				<ul class="submenu">
+					<li><a href="#">sublink3_1</a></li>
+					<li><a href="#">sublink3_2</a></li>
+					<li><a href="#">sublink3_3</a></li>
+					<li><a href="#">sublink3_4</a></li>
+					<li><a href="#">sublink3_5</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Link 4</a></li>
+			<li><a href="#">Link 5</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="spacer"></div>
+	
+</body>
+</html>
