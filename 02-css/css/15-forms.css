@@ -1,0 +1,66 @@
+
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+
+
+
+
+
+Important links
++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+*/
+
+/* ==========================================================================
+   Demo of Animation related properties
+   ========================================================================== */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+}
+
+
+.bg-grey{
+  background-color: #D4D4D4;
+  padding: 20px;
+}
+.bg-lightblue{
+  background-color: #ADB2FF;
+  padding: 20px;
+}
+.form-wrap form{
+  width:600px;
+  margin:20px auto;
+}
+
+
+.form-row{
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding:10px
+}
+.form-row label{
+  width:150px;
+  display: inline-block;
+  text-align: right;
+  font-size: 13px;
+  color: #666;
+}
+
+

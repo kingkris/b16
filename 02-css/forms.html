@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Background related CSS Properties | CSS World</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/15-forms.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Slabo+27px" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+	<h1><a href="index.html">CSS World</a></h1>
+	<nav>
+		<ul>
+			<li><a href="type.html">Type</a></li>
+			<li><a href="block.html">Block</a></li>
+			<li><a href="list.html">List</a></li>
+			<li><a href="background.html">Background</a></li>
+			<li><a href="border.html">Border</a></li>
+			<li><a href="box.html">Box</a></li>
+			<li><a href="position.html">Positions</a></li>
+			<li><a href="at-rules.html">@Rules</a></li>
+			<li><a href="animations.html">Animation</a></li>
+			<li><a href="flex.html">Flex</a></li>
+			<li><a href="grids.html">Grids</a></li>
+			<li><a href="video-audio-canvas.html">Video, Audio, Canvas</a></li>
+			<li><a href="responsive-layout.html">Layouts</a></li>
+			<li><a href="tables.html">Tables</a></li>
+			<li class="active"><a href="forms.html">Forms</a></li>
+		</ul>
+	</nav>
+</header><!-- /.site-header -->
+<div class="container">
+	<h1>Form Tag</h1>
+
+
+	<form action="thankyou.html" method="post" name="" >
+		<div>
+			<label for="uName">Username</label>
+			<input type="text" id="uName" placeholder="Enter USer name" name="uName">
+		</div>
+		<div>
+			<label for="uPass">Password</label>
+			<input type="password" id="uPass" placeholder="Enter Password" name="uPass">
+		</div>
+		<div>
+			<input type="submit"  value="Login">
+		</div>
+	</form>
+
+
+	<hr>
+
+<div class="form-wrap bg-grey">
+	<form action="test" method="get">
+		<fieldset>
+			<legend>Personal Info</legend>
+			<div class="form-row">
+				<label for="fName">First Name</label>
+				<input type="text" id="fName">
+			</div>
+			<div class="form-row">
+				<label for="lName">Last Name</label>
+				<input type="text" id="lName">
+			</div>
+			<div class="form-row">
+				<label>Email
+				<input type="text" id="email"></label>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Address</legend>
+			<div class="form-row">
+				<label for="fName">First Name</label>
+				<input type="text" id="fName">
+			</div>
+			<div class="form-row">
+				<label for="lName">Last Name</label>
+				<input type="text" id="lName">
+			</div>
+		</fieldset>
+	</form>
+</div>
+<div class="form-wrap bg-lightblue">
+	<form action="test" method="get">
+		<fieldset>
+			<legend>Input Tag</legend>
+			<div class="form-row">
+				<label for="input1">Input Tag demo</label>
+				<input type="text" name="input1" id="input1" placeholder="Input tag demo" value="some text" disabled readonly required>
+			</div>
+			<div class="form-row">
+				<label for="input2">Input Type Text</label>
+				<input type="text" name="input2" id="input2" placeholder="Input type text" >
+			</div>
+			<div class="form-row">
+				<label for="input3">Input Type Password</label>
+				<input type="password" name="input3" id="input3" placeholder="Input type password" >
+			</div>
+			<div class="form-row">
+				<label for="input4">Input Type File</label>
+				<input type="file" name="input4" id="input4" placeholder="Input type File" >
+			</div>
+			<div class="form-row">
+				<label for="input5">Input Type Image</label>
+				<input type="image" name="input5" id="input5" src="img/icon-speaker.png"  >
+			</div>
+			<div class="form-row">
+				<label for="input6">Input Type Button</label>
+				<input type="button" name="input6" id="input6" value="Dummy Button"  >
+			</div>
+			<div class="form-row">
+				<label for="input7">Input Type Submit</label>
+				<input type="submit" name="input7" id="input7" value="Submit Button"  >
+			</div>
+			<div class="form-row">
+				<label for="input8">Input Type Reset</label>
+				<input type="reset" name="input8" id="input8" value="Reset Button"  >
+			</div>
+		</fieldset>
+	</form>
+</div>
+
+</div><!-- /.container -->
+<footer class="site-footer">
+	<p>&copy; 2017 - KriS' School of Web, all rights reserved</p>
+</footer><!-- /.site-footer -->
+</body>
+</html>
