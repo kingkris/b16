@@ -63,4 +63,19 @@ body{
   color: #666;
 }
 
+.txt-area{
+  width:300px;
+  resize: horizontal;
+}
 
+
+
+.bg-title{
+  background-color: #9500F4;
+  padding:10px;
+  text-align: center;
+  margin:0 0 20px;
+  color:#FFF;
+  position:sticky;
+  top:10px;
+}

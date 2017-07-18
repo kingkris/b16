@@ -53,6 +53,7 @@
 	<hr>
 
 <div class="form-wrap bg-grey">
+<h2 class="bg-title">Form Tags</h2>
 	<form action="test" method="get">
 		<fieldset>
 			<legend>Personal Info</legend>
@@ -73,7 +74,7 @@
 			<legend>Address</legend>
 			<div class="form-row">
 				<label for="fName">First Name</label>
-				<input type="text" id="fName">
+				<input type="text" id="fName" maxlength="2">
 			</div>
 			<div class="form-row">
 				<label for="lName">Last Name</label>
@@ -83,6 +84,7 @@
 	</form>
 </div>
 <div class="form-wrap bg-lightblue">
+<h2 class="bg-title">Input Tag</h2>
 	<form action="test" method="get">
 		<fieldset>
 			<legend>Input Tag</legend>
@@ -118,7 +120,95 @@
 				<label for="input8">Input Type Reset</label>
 				<input type="reset" name="input8" id="input8" value="Reset Button"  >
 			</div>
+			<input type="hidden" name="courseType" value="Web developer training"  >
+
 		</fieldset>
+		<fieldset>
+			<legend>Other Tags</legend>
+			<div class="form-row">
+				<label for="txtarea1">Enter your message</label>
+				<textarea name="message" id="txtarea1" placeholder="Enter your message" class="txt-area" autofocus>textarea specific css property
+.txt-area{
+  resize: horizontal;
+  width:300px;
+}
+
+				</textarea>
+			</div>
+			<div class="form-row">
+				<label for="select1">Select box</label>
+				<select name="Select1" id="select1">
+					<option value="">Select your City</option>
+					<option value="Maddur">Maddur</option>
+					<option value="Mandya">Mandya</option>
+					<option value="Mysore">Mysore</option>
+					<option value="Mangaluru">Mangaluru</option>
+					<option value="Meerut">Meerut</option>
+					<option value="Meghalaya">Meghalaya</option>
+				</select>
+			</div>
+			<div class="form-row">
+				<label for="select2">Select box Mulitple</label>
+				<select name="Select2" id="select2" multiple>
+					<option value="">Select your City</option>
+					<option value="Maddur">Maddur</option>
+					<option value="Mandya">Mandya</option>
+					<option value="Mysore">Mysore</option>
+					<option value="Mangaluru">Mangaluru</option>
+					<option value="Meerut">Meerut</option>
+					<option value="Meghalaya">Meghalaya</option>
+				</select>
+			</div>
+			<div class="form-row">
+				<label for="select3">Select box With optgroup</label>
+				<select name="Select3" id="select3">
+					<option value="">Select your City</option>
+					<optgroup label="Metro Cities">
+						<option value="Delhi">Delhi</option>
+						<option value="Kolkatta">Kolkatta</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Chennai">Chennai</option>
+					</optgroup>
+					<optgroup label="Other Cities">
+						<option value="Maddur">Maddur</option>
+						<option value="Mandya">Mandya</option>
+						<option value="Mysore">Mysore</option>
+						<option value="Mangaluru">Mangaluru</option>
+						<option value="Meerut">Meerut</option>
+						<option value="Meghalaya">Meghalaya</option>
+					</optgroup>
+				</select>
+			</div>
+		</fieldset>		
+	</form>
+</div>
+<div class="form-wrap bg-grey">
+<h2 class="bg-title">HTML5 form tags</h2>
+	<form action="test" method="get">
+		<fieldset>
+			<legend>HTML5 form elements</legend>
+			<div class="form-row">
+				<label for="input9">Input Type Email</label>
+				<input type="email" name="input9" id="input9" placeholder="Enter your email">
+			</div>
+			<div class="form-row">
+				<label for="input10">Input Type URL</label>
+				<input type="url" name="input10" id="input10" placeholder="Enter your url">
+			</div>
+			<div class="form-row">
+				<label for="input11">Input Type number</label>
+				<input type="number" name="input11" id="input11" placeholder="Enter your number" min="200" max="500" step="50">
+			</div>
+			<div class="form-row">
+				<label for="input12">Input Type range</label>
+				<input type="range" name="input12" id="input12" placeholder="Enter your range" min="200" max="500" step="50">
+			</div>
+			<div class="form-row">
+				<label for="input13">Input Type range</label>
+				<input type="date" name="input13" id="input13" placeholder="Enter your DOB" >
+			</div>
+		</fieldset>
+
 	</form>
 </div>
 
