@@ -53,7 +53,7 @@
 	<hr>
 
 <div class="form-wrap bg-grey">
-<h2 class="bg-title">Form Tags</h2>
+	<h2 class="bg-title">Form Tags</h2>
 	<form action="test" method="get">
 		<fieldset>
 			<legend>Personal Info</legend>
@@ -82,6 +82,7 @@
 			</div>
 		</fieldset>
 	</form>
+	<p class="tac">----------- eo form-wrap bg-grey ----------- </p>
 </div>
 <div class="form-wrap bg-lightblue">
 <h2 class="bg-title">Input Tag</h2>
@@ -94,7 +95,15 @@
 			</div>
 			<div class="form-row">
 				<label for="input2">Input Type Text</label>
-				<input type="text" name="input2" id="input2" placeholder="Input type text" >
+				<input type="text" name="input2" id="input2" placeholder="Input type text"  >
+			</div>
+			<div class="form-row">
+				<label for="input21">Input Type Text</label>
+				<input type="text" name="input21" id="input21" placeholder="Input type text" class="input-bgi"  >
+			</div>
+			<div class="form-row">
+				<label for="input22">Input Type Text</label>
+				<div class="form-element"><input type="text" name="input22" id="input22" placeholder="Input type text" class="input-bg"  ></div>
 			</div>
 			<div class="form-row">
 				<label for="input3">Input Type Password</label>
@@ -122,6 +131,58 @@
 			</div>
 			<input type="hidden" name="courseType" value="Web developer training"  >
 
+		</fieldset>
+		<fieldset>
+			<legend>Input Tag - Radio Buttons</legend>
+			<div class="form-row">
+				<p>Who is the president of India</p>
+				<div class="form-sub-row">
+					<input type="radio" name="president" id="radio1" value="Pranab Mukerji" >
+					<label for="radio1">Pranab Mukerji</label>
+				</div>
+				<div class="form-sub-row">
+					<input type="radio" name="president" id="radio2" value="Meira Kumar" >
+					<label for="radio2">Meira Kumar</label>
+				</div>
+				<div class="form-sub-row">
+					<input type="radio" name="president" id="radio3" value="Ram Nath Kovind" >
+					<label for="radio3">Ram Nath Kovind</label>
+				</div>
+				<div class="form-sub-row">
+					<input type="radio" name="president" id="radio4" value="Narendra Modi" checked  >
+					<label for="radio4">Narendra Modi</label>
+				</div>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Input Tag - Checkboxes</legend>
+			<div class="form-row">
+				<p>Who is your favourite actor</p>
+				<div class="form-sub-row form-sub-row-horizantal">
+					<input type="checkbox" name="actor" id="checkbox1" value="Sharukh Khan" >
+					<label for="checkbox1">Sharukh Khan</label>
+				</div>
+				<div class="form-sub-row form-sub-row-horizantal">
+					<input type="checkbox" name="actor" id="checkbox2" value="Salman Khan" >
+					<label for="checkbox2">Salman Khan</label>
+				</div>
+				<div class="form-sub-row form-sub-row-horizantal">
+					<input type="checkbox" name="actor" id="checkbox3" value="Akshay Kumar" >
+					<label for="checkbox3">Akshay Kumar</label>
+				</div>
+				<div class="form-sub-row form-sub-row-horizantal">
+					<input type="checkbox" name="actor" id="checkbox4" value="Aamir Khan" >
+					<label for="checkbox4">Aamir Khan</label>
+				</div>
+				<div class="form-sub-row form-sub-row-horizantal">
+					<input type="checkbox" name="actor" id="checkbox5" value="Saif Ali Khan" >
+					<label for="checkbox5">Saif Ali Khan</label>
+				</div>
+				<div class="form-sub-row form-sub-row-horizantal">
+					<input type="checkbox" name="actor" id="checkbox6" value="Ranbir Kapoor" >
+					<label for="checkbox6">Ranbir Kapoor</label>
+				</div>
+			</div>
 		</fieldset>
 		<fieldset>
 			<legend>Other Tags</legend>
@@ -210,6 +271,9 @@
 		</fieldset>
 
 	</form>
+<div class="spacer"></div>
+
+
 </div>
 
 </div><!-- /.container -->

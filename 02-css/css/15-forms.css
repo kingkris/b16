@@ -78,4 +78,71 @@ body{
   color:#FFF;
   position:sticky;
   top:10px;
+  z-index:2;
+}
+.form-sub-row{}
+.form-row .form-sub-row label{
+  text-align: left;
+  cursor: pointer;
+}
+
+.form-sub-row input:checked ~ label{
+  color:red;
+  font-weight: bold;
+}
+.form-sub-row input[type="checkbox"]:checked ~ label{
+  color:green;
+}
+
+
+.form-sub-row-horizantal{
+  display: inline-block;
+}
+
+.input-bgi{
+  background-image: url('../img/bullet-01.png');
+  background-repeat: no-repeat;
+  background-position: 5px 3px;
+  border: solid 1px #AEAEAE;
+  border-radius:4px;
+  padding:4px 10px 4px 30px;
+}
+
+.input-bg{
+  border: solid 1px #AEAEAE;
+  border-radius:4px;
+  padding:4px 10px 4px 30px;
+  position: relative;
+}
+.input-bg:hover{
+  border-color: #A9FF3A;
+}
+.input-bg:focus{
+  border-color: #569800;
+}
+
+.form-element{
+  display: inline-block;
+  position: relative;
+}
+.form-element:before{
+  position: absolute;
+  left:10px;
+  top:3px;
+  content: "@";
+  width:20px;
+  height:20px;
+  color:#444;
+  z-index:1;
+  text-align: center;
+  line-height: 20px;
+}
+
+.tac{
+  text-align: center;
+}
+.spacer{
+  min-height: 500px;
+  margin-left: 40px;
+  border-left: dotted 1px #FBA0A0;
 }
