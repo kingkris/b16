@@ -9,6 +9,9 @@
 		margin: 0;
 		padding: 0;
 	}
+	body{
+		font-family: Verdana, Geneva, sans-serif;
+	}
 	.email-bg{
 		background-color: #B9B9B9;
 		padding: 20px;
@@ -26,12 +29,41 @@
 	.white-bg{
 		background-color: #fff;
 	}
-	.logo{
+	.header{
 		background-color: #9500EA;
 		padding: 10px;
 	}
+	.logo{
+		float: left;
+	}
 	.logo img{
 		display: block;
+	}
+	.phone{
+		float: right;
+	}
+	.phone a{
+		color: white;
+		text-decoration: none;
+	}
+	.txt{
+		clear: both;
+	}
+
+	.cn{
+		border:dashed 1px white;
+		position: relative;
+	}
+	.cn:after{
+		content: attr(class);
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: rgba(0,0,0,.75);
+		padding: 2px 5px;
+		color: #FFF;
+		font-size: 10px;
+		text-transform: uppercase;
 	}
 	.content{
 		padding: 20px;
@@ -49,6 +81,96 @@
 		color: #444;
 		font-size: 16px;
 	}
+
+.dabba{
+	background-color: #A000B3;
+	padding: 5px;
+}
+.pos-r{
+	border: solid 1px red;
+	color: white;
+	position: relative;
+	background-color: #BD09D2;
+	top: 20px;
+	left: 20px
+}
+.pos-a{
+	border: solid 1px red;
+	color: white;
+	background-color: #BD09D2;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+
+.banner{
+	border: solid 10px rgba(255,0,0,.75);
+	position: relative;
+	margin: 20px 0;
+}
+.banner img{
+	width: 100%;
+	display: block;
+}
+.quote{
+	position: absolute;
+	background-color: rgba(0,0,0,.7);
+	color: #FFF;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+}
+
+.arrow{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.arrow.left{left: -25px; }
+.arrow.right{right: -25px; }
+
+
+.feedback{
+	position: fixed;
+	left: 0;
+	bottom:10%;
+}
+.feedback a{
+	display: block;
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #62D000;
+	padding: 10px;
+	text-align: center;
+}
+.feedback a:hover{
+	background-color: #114CD3;
+}
+
+.abc{}
+.abc p{
+	margin-bottom: 20px;
+}
+
+.title-sticky{
+	background-color: #B2142E;
+	color: #FFF;
+	padding: 10px;
+	text-align: center;
+	position: sticky;
+	top: 10px;
+}
+
+
 </style>
 </head>
 <body>
@@ -56,12 +178,140 @@
 		<div class="wrap">
 			<p class="txt-small">Learn from a Master</p>
 			<div class="white-bg">
-				<div class="logo">
-					<img src="http://www.htmlden.com/htmlden-logo-white.png" alt="">
+				<div class="header cn">
+					<div class="logo cn">
+						<img src="http://www.htmlden.com/htmlden-logo-white.png" alt="" class="cn">
+					</div>
+					<div class="phone cn">
+						<a href="tel:+919880439463">98804 39463</a>
+					</div>
+					<p class="txt cn">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 				<div class="content">
-					<h1>WEB DeSign Course</h1>
+					<h1 >WEB DeSign Course</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo, cumque, et esse nihil minus corporis, ratione dolores sint quos minima, pariatur ab possimus harum voluptatem ad quo ullam illo.</p>
+					<div class="dabba cn">
+						<div class="pos-r">
+							I Am positioned relative
+						</div>
+					</div><!-- eo dabba -->
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi debitis aliquid, cum doloribus ad, asperiores eos voluptas, laboriosam vitae pariatur, fugiat quo blanditiis perferendis odio dolores! At est, dolores nobis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi debitis aliquid, cum doloribus ad, asperiores eos voluptas, laboriosam vitae pariatur, fugiat quo blanditiis perferendis odio dolores! At est, dolores nobis.</p>
+					<div class="dabba cn">
+						<div class="pos-a">
+							I Am positioned absolute
+						</div>
+					</div><!-- eo dabba -->
+
+					<div class="banner">
+						<img src="https://api.fnkr.net/testimg/750x300/62D100/FFF/?text=Steve+Jobs">
+						<div class="quote">
+							Have the courage to follow your heart and intuition. They somehow know what you truly want to become.
+						</div>
+						<div class="arrow left"></div>
+						<div class="arrow right"></div>
+					</div>
+
+<hr>
+
+					<div class="feedback">
+						<a href="#">Feedback</a>
+					</div>
+<hr>
+
+					<div class="abc">
+						<h3 class="title-sticky">Some title 001</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid itaque nemo assumenda cumque corrupti, iusto alias saepe quisquam quasi sapiente debitis dolore quas rerum quibusdam natus cum vero modi dolor!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos atque minus ad esse, aliquid repudiandae accusantium? Vitae praesentium nobis, hic tempora provident nam dolores suscipit, incidunt enim quam, minima vero.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non suscipit necessitatibus iste fuga dolor officia, ipsam nam, minima molestiae assumenda odio voluptas sunt, voluptate accusamus, ullam voluptatum eligendi qui sed.</p>
+						<hr>
+					</div>
+					<div class="abc">
+						<h3 class="title-sticky">Some title 002</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid itaque nemo assumenda cumque corrupti, iusto alias saepe quisquam quasi sapiente debitis dolore quas rerum quibusdam natus cum vero modi dolor!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos atque minus ad esse, aliquid repudiandae accusantium? Vitae praesentium nobis, hic tempora provident nam dolores suscipit, incidunt enim quam, minima vero.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non suscipit necessitatibus iste fuga dolor officia, ipsam nam, minima molestiae assumenda odio voluptas sunt, voluptate accusamus, ullam voluptatum eligendi qui sed.</p>
+						<hr>
+					</div>
+					<div class="abc">
+						<h3 class="title-sticky">Some title 003</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid itaque nemo assumenda cumque corrupti, iusto alias saepe quisquam quasi sapiente debitis dolore quas rerum quibusdam natus cum vero modi dolor!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos atque minus ad esse, aliquid repudiandae accusantium? Vitae praesentium nobis, hic tempora provident nam dolores suscipit, incidunt enim quam, minima vero.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non suscipit necessitatibus iste fuga dolor officia, ipsam nam, minima molestiae assumenda odio voluptas sunt, voluptate accusamus, ullam voluptatum eligendi qui sed.</p>
+						<hr>
+					</div>
+					<div class="abc">
+						<h3 class="title-sticky">Some title 004</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid itaque nemo assumenda cumque corrupti, iusto alias saepe quisquam quasi sapiente debitis dolore quas rerum quibusdam natus cum vero modi dolor!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos atque minus ad esse, aliquid repudiandae accusantium? Vitae praesentium nobis, hic tempora provident nam dolores suscipit, incidunt enim quam, minima vero.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non suscipit necessitatibus iste fuga dolor officia, ipsam nam, minima molestiae assumenda odio voluptas sunt, voluptate accusamus, ullam voluptatum eligendi qui sed.</p>
+						<hr>
+					</div>
+					<div class="abc">
+						<h3 class="title-sticky">Some title 005</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid itaque nemo assumenda cumque corrupti, iusto alias saepe quisquam quasi sapiente debitis dolore quas rerum quibusdam natus cum vero modi dolor!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos atque minus ad esse, aliquid repudiandae accusantium? Vitae praesentium nobis, hic tempora provident nam dolores suscipit, incidunt enim quam, minima vero.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non suscipit necessitatibus iste fuga dolor officia, ipsam nam, minima molestiae assumenda odio voluptas sunt, voluptate accusamus, ullam voluptatum eligendi qui sed.</p>
+						<hr>
+					</div>
+					<div class="abc">
+						<h3 class="title-sticky">Some title 006</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid itaque nemo assumenda cumque corrupti, iusto alias saepe quisquam quasi sapiente debitis dolore quas rerum quibusdam natus cum vero modi dolor!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos atque minus ad esse, aliquid repudiandae accusantium? Vitae praesentium nobis, hic tempora provident nam dolores suscipit, incidunt enim quam, minima vero.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non suscipit necessitatibus iste fuga dolor officia, ipsam nam, minima molestiae assumenda odio voluptas sunt, voluptate accusamus, ullam voluptatum eligendi qui sed.</p>
+						<hr>
+					</div>
+
+
+<div class="parent">
+	<div class="child child1">Child 1</div>
+	<div class="child child2">
+		<ul class="linkz">
+			<li><a href="#">link01</a></li>
+			<li><a href="#">link02</a></li>
+			<li><a href="#">link03</a></li>
+			<li><a href="#">link04</a></li>
+			<li><a href="#">link05</a></li>
+		</ul>
+	</div>
+</div>
+
+
+<style>
+	.parent{
+		border: solid 1px red;
+		background-color: #F4D9D9;
+		padding: 5px;
+	}
+	.parent:after,
+	.linkz:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.child{
+		background-color: #fff;
+		border: dashed 1px #333;
+	}
+	.child1{
+		float: left;
+	}
+	.child2{
+		float: right;
+	}
+	.linkz{
+		padding-left: 0;
+		list-style: none;
+		background-color: #F0F;
+	}
+	.linkz li{
+		float: left;
+		margin-left: 10px;
+	}
+</style>
+
+
+
 				</div>
 			</div>
 		</div>

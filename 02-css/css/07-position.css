@@ -12,7 +12,7 @@
 Position related style properties
 +++++++++++++++++++++++++++++++++++++++++++
 
-~  position: static | relative | absolute | sticky  |  fixed
+~  position: static | relative | absolute | fixed  |  sticky
     ^ default value static
     ^ This property doesn't gets inherited
     ^ This property can be applied to all elements
