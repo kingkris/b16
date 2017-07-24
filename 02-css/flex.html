@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FLEX | CSS World</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/10-flex.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Slabo+27px" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+	<h1><a href="index.html">CSS World</a></h1>
+	<nav>
+		<ul>
+			<li><a href="type.html">Type</a></li>
+			<li><a href="block.html">Block</a></li>
+			<li><a href="list.html">List</a></li>
+			<li><a href="background.html">Background</a></li>
+			<li><a href="border.html">Border</a></li>
+			<li><a href="box.html">Box</a></li>
+			<li><a href="position.html">Positions</a></li>
+			<li><a href="at-rules.html">@Rules</a></li>
+			<li><a href="animations.html">Animation</a></li>
+			<li class="active"><a href="flex.html">Flex</a></li>
+			<li><a href="grids.html">Grids</a></li>
+			<li><a href="video-audio-canvas.html">Video, Audio, Canvas</a></li>
+			<li><a href="responsive-layout.html">Layouts</a></li>
+			<li><a href="tables.html">Tables</a></li>
+			<li><a href="forms.html">Forms</a></li>
+		</ul>
+	</nav>
+</header><!-- /.site-header -->
+<div class="container">
+	<h1>FLEX</h1>
+	
+	<div class="wrapp">
+		<h2 class="sub-title"><span>Demo of</span> inline block</h2>
+		<div class="parent parent-ib">
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+1">
+					<h3>Some Title will come here, it may be bigger, it may go to 2 or 3  lines</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+2">
+					<h3>Some Title</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+3">
+					<h3>Some Title will come here will come here will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+4">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+5">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+6">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x60/93A805/FFF/?text=Child+7">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x100/93A805/FFF/?text=Child+8">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+9">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+10">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+		</div><!-- eo parent -->
+	</div><!-- eo wrapp -->
+
+	<div class="wrapp">
+		<h2 class="sub-title"><span>Demo of</span> Floats</h2>
+		<div class="parent parent-float">
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+1">
+					<h3>Some Title will come here, it may be bigger, it may go to 2 or 3  lines</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+2">
+					<h3>Some Title</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x100/93A805/FFF/?text=Child+3">
+					<h3>Some Title will come here will come here will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+4">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x60/93A805/FFF/?text=Child+5">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+6">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+7">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x60/93A805/FFF/?text=Child+8">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+9">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+		</div><!-- eo parent -->
+	</div><!-- eo wrapp -->
+
+	<div class="wrapp">
+		<h2 class="sub-title"><span>Demo of</span> FLEX</h2>
+		<div class="parent parent-flex">
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+1">
+					<h3>Some Title will come here, it may be bigger, it may go to 2 or 3  lines</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+2">
+					<h3>Some Title</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x100/93A805/FFF/?text=Child+3">
+					<h3>Some Title will come here will come here will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+4">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x60/93A805/FFF/?text=Child+5">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+6">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+7">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x60/93A805/FFF/?text=Child+8">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+9">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+10">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+11">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+12">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+		</div><!-- eo parent -->
+	</div><!-- eo wrapp -->
+
+	<div class="wrapp">
+		<h2 class="sub-title"><span>Demo of</span> FLEX - example-with child order</h2>
+		<div class="parent parent-flex1">
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+1">
+					<h3>Some Title will come here, it may be bigger, it may go to 2 or 3  lines</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+2">
+					<h3>Some Title</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x100/93A805/FFF/?text=Child+3">
+					<h3>Some Title will come here will come here will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+4">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x60/93A805/FFF/?text=Child+5">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+6">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+7">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x60/93A805/FFF/?text=Child+8">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+9">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+10">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+11">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+12">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+		</div><!-- eo parent -->
+	</div><!-- eo wrapp -->
+
+	<div class="wrapp">
+		<h2 class="sub-title"><span>Demo of</span> FLEX - example-with flex-grow</h2>
+		<div class="parent parent-flex2">
+			<div class="child child2">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+1">
+					<h3>Some Title will come here, it may be bigger, it may go to 2 or 3  lines</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+2">
+					<h3>Some Title</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x100/93A805/FFF/?text=Child+3">
+					<h3>Some Title will come here will come here will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+4">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x60/93A805/FFF/?text=Child+5">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x120/93A805/FFF/?text=Child+6">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+			<div class="child">
+				<div>
+					<img src="https://api.fnkr.net/testimg/150x80/93A805/FFF/?text=Child+7">
+					<h3>Some Title will come here</h3>
+				</div>
+			</div><!-- eo child -->
+		</div><!-- eo parent -->
+	</div><!-- eo wrapp -->
+
+</div><!-- /.container -->
+<footer class="site-footer">
+	<p>&copy; 2017 - KriS' School of Web, all rights reserved</p>
+</footer><!-- /.site-footer -->
+
+
+
+
+</body>
+</html>
