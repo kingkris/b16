@@ -1,0 +1,238 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+ Flex Rules
++++++++++++++++++++++++++++++++++++++++++++
+
+display: flex | inline-flex
+flex-direction: row | column | row-reverse | column-reverse
+flex-wrap: nowrap  | wrap | wrap-reverse
+justify-content: flex-start | flex-end | center | space-between | space-around
+align-items: flex-start | flex-end | center | baseline | stretch
+align-content: flex-start | flex-end | center | space-between | space-around | stretch
+
+
+
+flex-grow : 
+flex-shrink :
+flex-basis : <width> | fill | max-content | min-content | fit-content | content | 
+
+
+
+
+Shorthand is flex: [flex-grow] [flex-shrink] [flex-basis]
+
+
+
+
+
+Some important links
++++++++++++++++++++++++++++++++++++++++++++
+
+http://bennettfeely.com/flexplorer/
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+https://webdesign.tutsplus.com/articles/15-inspiring-examples-of-css-animation-on-codepen--cms-23937
+
+https://flexbox.webflow.com/#collectiongrid
+
+*/
+
+/* ==========================================================================
+   Demo of Flex related properties
+   ========================================================================== */
+
+*,
+*:after,
+*:before{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+}
+
+/*----------  Site Header  ----------*/
+.site-header{
+  background-color: #2C5EDE;
+  color:#FFF;
+  padding:5px;
+}
+.site-header h1 a{
+  color:#FFF;
+}
+.site-header nav ul{
+  margin:0 0 5px;
+}
+.site-header nav li a{
+  color:#FFF;
+  text-decoration: none;
+  padding:3px 8px;
+  margin:0 3px;
+  font-size:14px;
+  text-transform: uppercase;
+}
+.site-header nav li a:hover,
+.site-header nav li.active a{
+  color:#2C5EDE;
+  background-color: #fff;
+  border-radius:4px;
+}
+
+/*----------  Site footer  ----------*/
+.site-footer{
+  background-color: #DADADA;
+  text-align: center;
+  padding:5px;
+}
+/*----------  Common Layout  ----------*/
+.wrapper{
+  min-height:500px;
+}
+.bg-blue{background-color: #C5D4FF; }
+.bg-green{background-color: #C4F0BA; }
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  padding:5px 15px;
+}
+@media (min-width:768px) {
+  .container{max-width: 768px; }
+}
+@media (min-width:980px) {
+  .container{max-width: 980px; }
+}
+@media (min-width:1200px) {
+  .container{max-width: 1200px; }
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Slabo 27px', serif;
+}
+.title{
+  text-align: center;
+  color:#2C5EDE;
+  border-bottom: double 4px #2C5EDE;
+}
+
+
+/*====================================
+=            Product Grid            =
+====================================*/
+
+.products{
+  border: solid 3px green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: stretch;
+}
+.item{
+  position: relative;
+  padding: 15px;
+  width: 25%;
+  border: dotted 1px red;
+}
+.item:hover{
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+}
+.imgwrap{
+  position: relative;
+  overflow: hidden;
+  border: dotted 1px #CCC;
+  background-color: #4365E2;
+}
+.imgwrap:before{
+  content:"";
+  display: block;
+  padding-top:75%;
+}
+.imgwrap img{
+  position: absolute;
+  top: 0;right: 0;bottom: 0;left:0;
+  margin:auto;
+  width:100%;
+}
+.product a{
+  text-decoration: none;
+}
+.product a h3{
+  color:#2C5EDE;
+  margin:35px 0 5px;
+}
+.product a p{
+  font-size:14px;
+  margin:0 0 5px;
+}
+.product a p span{
+  margin-right: 10px;
+}
+.product a p span:before{
+  content:"\20B9";
+  font-size:16px;
+}
+
+.product a p span.mrp{
+  color:#999;
+  text-decoration: line-through;
+}
+.product a p span.price{
+  font-size:16px;
+  color:#444;
+}
+.discount{
+  background-color: #4CAF04;
+  padding:3px 6px;
+  position: absolute;
+  top: 20px;
+  right:20px;
+  color:#FFF;
+  font-size:13px;
+  border-radius:4px;
+  font-style:normal;
+}
+.product .quick-view{
+  position: absolute;
+  padding:0 15px;
+  border-radius:6px;
+  background-color: #FFF;
+  color:#444;
+  text-transform: uppercase;
+  font-size:18px;
+  line-height: 42px;
+  left:10%; right:10%;
+  margin-left: auto;
+  margin-right: auto;
+  top:52.5%;
+  text-align: center;
+  display: none;
+}
+.product:hover .quick-view{
+  display: block;
+}
+
+/*=====  End of Product Grid  ======*/
+
+/*=====================================
+=            Split Screens            =
+=====================================*/
+.split{
+  display: flex;
+}
+.half{}
+.half img{
+  display: block;
+  width:100%;
+}
+
+/*=====  End of Split Screens  ======*/
