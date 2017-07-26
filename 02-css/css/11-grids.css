@@ -1,0 +1,295 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+    column-count:3;
+    column-width:500px;
+
+
+shorthand property
+columns : [column-width] [column-count]
+
+
+    column-count: here you specify the number of columns you want to apply to the element.
+    column-width: the width of a single column. Be aware that this value will probably be changed by the browser.
+    column-gap: the width of the gap between the columns.
+    column-rule-width: the rule part is kind of a border for your columns and in here you specify the width of that border.
+    column-rule-style: also like the border, if you need to specify the style.
+    column-rule-color: here the color of the rule.
+    column-span: the value in here will tell the browser how many columns you want an element to span, this is good for headings and works like colspan and rowspan in tables.
+
+
+
+
+Some important links
++++++++++++++++++++++++++++++++++++++++++++
+https://www.thoughtco.com/using-css-columns-instead-of-floats-4053898
+
+https://www.webdesignerdepot.com/2013/03/how-to-use-css3-columns/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/column-fill
+
+
+Grids
+-----------------------
+http://caniuse.com/#feat=css-grid
+
+https://www.w3.org/TR/css3-grid-layout/
+
+https://blogs.msdn.microsoft.com/ie/2011/04/14/ie10-platform-preview-and-css-features-for-adaptive-layouts/
+
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+
+CSS NAming
+------------------------
+http://getbem.com/naming/
+
+https://www.sitepoint.com/title-css-simple-approach-css-class-naming/
+
+http://bdavidxyz.com/blog/how-to-name-css-classes/
+
+https://blog.toughbyte.com/blabla-9fd86eae4e6c
+
+https://medium.com/@drublic/css-naming-conventions-less-rules-more-fun-12af220e949b
+
+https://zellwk.com/blog/css-architecture-1/
+
+
+
+
+*/
+
+/* ==========================================================================
+   Demo of Flex related properties
+   ========================================================================== */
+
+*,
+*:after,
+*:before{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+}
+
+/*----------  Site Header  ----------*/
+.site-header{
+  background-color: #2C5EDE;
+  color:#FFF;
+  padding:5px;
+}
+.site-header h1 a{
+  color:#FFF;
+}
+.site-header nav ul{
+  margin:0 0 5px;
+}
+.site-header nav li a{
+  color:#FFF;
+  text-decoration: none;
+  padding:3px 8px;
+  margin:0 3px;
+  font-size:14px;
+  text-transform: uppercase;
+}
+.site-header nav li a:hover,
+.site-header nav li.active a{
+  color:#2C5EDE;
+  background-color: #fff;
+  border-radius:4px;
+}
+
+/*----------  Site footer  ----------*/
+.site-footer{
+  background-color: #DADADA;
+  text-align: center;
+  padding:5px;
+}
+/*----------  Common Layout  ----------*/
+.wrapper{
+  min-height:500px;
+}
+.bg-blue{background-color: #C5D4FF; }
+.bg-green{background-color: #C4F0BA; }
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  padding:5px 15px;
+  border: solid 2px red;
+}
+@media (min-width:768px) {
+  .container{max-width: 768px; }
+}
+@media (min-width:980px) {
+  .container{max-width: 980px; }
+}
+@media (min-width:1200px) {
+  .container{max-width: 1200px; }
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Slabo 27px', serif;
+}
+.title{
+  text-align: center;
+  color:#2C5EDE;
+  border-bottom: double 4px #2C5EDE;
+}
+
+/*===============================
+=            Columns            =
+===============================*/
+.boxa{
+  border: dotted 1px red;
+  margin:20px 0;
+  padding:20px;
+  background-color: #fff;
+}
+
+@media (min-width:768px){
+  .column-way{
+    column-count:2;
+    column-gap:30px;
+    column-rule: dotted 1px grey;
+  }
+}
+@media (min-width:980px){
+  .column-way{
+    column-count:3;
+  }
+}
+/*=====  End of Columns  ======*/
+
+/*=================================
+=            CSS grids            =
+=================================*/
+.parent{
+  background-color: #fff;
+  padding:10px;
+  margin:20px;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(60px, auto);
+}
+.parent > header{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: #C20ADD;
+  color:#FFF
+}
+.parent > .banner{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.parent > .box1{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.parent > .box2{
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.parent > .box3{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.parent > .box4{
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.parent > .child{
+  border: solid 1px red;
+  text-align: center;
+}
+.banner img{
+  width:100%;
+  display: block;
+}
+@media (min-width:768px) {
+  .parent{
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .parent > header{
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+  .parent > .banner{
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+  .parent > .box1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .parent > .box2{
+    grid-column-start: 5;
+    grid-column-end: 9;
+  }
+  .parent > .box3{
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .parent > .box4{
+    grid-column-start: 5;
+    grid-column-end: 9;
+  }
+}
+@media (min-width:980px) {
+  .parent{
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .parent > header{
+    grid-column-start: 1;
+    grid-column-end: 13;
+    background-color: #C20ADD;
+    color:#FFF
+  }
+  .parent > .banner{
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+  .parent > .box1{
+    grid-column-start: 9;
+    grid-column-end: 13;
+  }
+  .parent > .box2{
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .parent > .box3{
+    grid-column-start: 5;
+    grid-column-end: 11;
+  }
+  .parent > .box4{
+    grid-column-start: 11;
+    grid-column-end: 13;
+  }
+}
+
+
+
+/*=====  End of CSS grids  ======*/
+
+
+
+
+
+
+
+
+
+

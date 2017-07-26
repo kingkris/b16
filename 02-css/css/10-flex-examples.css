@@ -104,6 +104,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   padding:5px 15px;
+  border: solid 2px red;
 }
 @media (min-width:768px) {
   .container{max-width: 768px; }
@@ -130,18 +131,35 @@ h1, h2, h3, h4, h5, h6{
 ====================================*/
 
 .products{
-  border: solid 3px green;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   align-items: stretch;
+  justify-content:space-between;
+  margin:30px 0;
 }
 .item{
   position: relative;
   padding: 15px;
-  width: 25%;
-  border: dotted 1px red;
+  width: 100%;
+  border: solid 1px red;
 }
+@media(min-width:480px){
+  .item{
+    width: 50%;
+  }
+}
+@media(min-width:768px){
+  .item{
+    width: 33.3333%;
+  }
+}
+@media(min-width:980px){
+  .item{
+    width: 25%;
+  }
+}
+
 .item:hover{
   background-color: #fff;
   box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
@@ -205,7 +223,7 @@ h1, h2, h3, h4, h5, h6{
   position: absolute;
   padding:0 15px;
   border-radius:6px;
-  background-color: #FFF;
+  background-color: #FCEDFF;
   color:#444;
   text-transform: uppercase;
   font-size:18px;
