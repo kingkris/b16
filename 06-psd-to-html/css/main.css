@@ -132,11 +132,34 @@ textarea {
 .icon-document-file-psd:before    {content: "\e90d"; }
 
 
+/**
+ *
+ * Common Styles
+ *
+ */
+
+
+/*----------  Header Style  ----------*/
+.site-header{
+  border-top: solid 16px #ffd800;
+  position: absolute;
+  left: 0;right: 0;
+  top: 0;
+}
+
+
+
+/*----------  Nav Styles  ----------*/
 
 
 
 
 
+
+.banner img{
+  display: block;
+  width:100%;
+}
 
 
 
