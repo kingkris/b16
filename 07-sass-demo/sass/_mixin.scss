@@ -1,0 +1,20 @@
+
+@mixin box{
+	border-radius: 8px 0;
+	border:solid 1px #FFF;
+}
+
+@mixin square100{
+	width:100px;
+	height:100px;
+	@include box;
+	background-color: $primary-color;
+}
+
+@mixin square($width){
+	width:$width;
+	height:$width;
+	@include box;
+	background-color: $primary-color;
+}
+

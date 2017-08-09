@@ -1,0 +1,21 @@
+.menu{
+	padding-left: 0;
+	margin:0;
+	list-style: none;
+
+	li{
+		display: inline-block;
+		a{
+			color:#FFF;
+			text-decoration: none;
+			text-transform: uppercase;
+			padding:3px 8px;
+			@include box;
+			&:hover{
+				background-color: #FFF;
+				color:$primary-color;
+			}
+		}
+		.sub-menu{display: none}
+	}
+}

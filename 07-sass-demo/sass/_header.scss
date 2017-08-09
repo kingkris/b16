@@ -1,0 +1,26 @@
+/*  Site-header block */
+.site-header{
+	background-color: $header-bg;
+	border-bottom: solid $header-bdr-size $header-bdr-color;
+	padding:10px;
+	text-align: center;
+
+	h1{
+		font-size:50px;
+		font-family: $heading-font-family;
+		color:$primary-color;
+		small{
+			display: block;
+			font-family: $base-font-family;
+			font-size: ($base-font-size) + 2;
+			font-weight:$base-font-weight;
+		}
+	}
+	.ham{display: none}
+	nav{
+		background-color: darken($primary-color, 10%);
+		padding:10px;
+		@include box;
+	}
+}
+

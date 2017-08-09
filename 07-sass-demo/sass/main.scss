@@ -1,0 +1,82 @@
+@import 'variables';
+@import 'mixin';
+
+
+
+
+body{
+	font: $base-font-style $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+	background-color: $page-bg;
+	color:#444;
+	margin:0;
+}
+
+@import 'header';
+@import 'menu';
+
+.team{
+	&:after{
+		display: block;
+		clear: both;
+		content:"";
+	}
+}
+.member{
+	@include square100;
+	float: left;
+	margin:10px;
+	overflow:hidden;
+	img{
+		width:100%;
+		height:auto;
+		display: block
+	}
+}
+
+.member2{
+	@include square(200px);
+	float: left;
+	margin:10px;
+	overflow:hidden;
+	img{
+		width:100%;
+		height:auto;
+		display: block
+	}
+}
+.member3{
+	@include square(25%);
+	float: left;
+	margin:10px;
+	overflow:hidden;
+	img{
+		width:100%;
+		height:auto;
+		display: block
+	}
+}
+
+.title{
+	font-size:3em;
+	color:$primary-color;
+	font-family: $heading-font-family;
+	border-bottom:solid 3px $primary-color;
+}
+
+.title-two{
+	@extend .title;
+	font-size:2em;
+}
+.title-three{
+	@extend .title;
+	font-size:1.5em;
+}
+.title-error{
+	@extend .title;
+	background-color: #E93131;
+	color:#FFF;
+}
+
+
+
+

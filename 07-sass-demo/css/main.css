@@ -1,0 +1,134 @@
+body {
+  font: normal 300 16px/1.4 Roboto, sans-serif;
+  background-color: #abb4e2;
+  color: #444;
+  margin: 0;
+}
+
+/*  Site-header block */
+.site-header {
+  background-color: #f7f8fc;
+  border-bottom: solid 6px #0a0d1e;
+  padding: 10px;
+  text-align: center;
+}
+.site-header h1 {
+  font-size: 50px;
+  font-family: "Roboto Slab", serif;
+  color: #3f51b5;
+}
+.site-header h1 small {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+.site-header .ham {
+  display: none;
+}
+.site-header nav {
+  background-color: #32408f;
+  padding: 10px;
+  border-radius: 8px 0;
+  border: solid 1px #FFF;
+}
+
+.menu {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 8px 0;
+  border: solid 1px #FFF;
+}
+.menu li a:hover {
+  background-color: #FFF;
+  color: #3f51b5;
+}
+.menu li .sub-menu {
+  display: none;
+}
+
+.team:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.member {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px 0;
+  border: solid 1px #FFF;
+  background-color: #3f51b5;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+.member img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.member2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px 0;
+  border: solid 1px #FFF;
+  background-color: #3f51b5;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+.member2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.member3 {
+  width: 25%;
+  height: 25%;
+  border-radius: 8px 0;
+  border: solid 1px #FFF;
+  background-color: #3f51b5;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+.member3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title, .title-two, .title-three, .title-error {
+  font-size: 3em;
+  color: #3f51b5;
+  font-family: "Roboto Slab", serif;
+  border-bottom: solid 3px #3f51b5;
+}
+
+.title-two {
+  font-size: 2em;
+}
+
+.title-three {
+  font-size: 1.5em;
+}
+
+.title-error {
+  background-color: #E93131;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=main.css.map */
