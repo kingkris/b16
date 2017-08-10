@@ -16,6 +16,6 @@
 				color:$primary-color;
 			}
 		}
-		.sub-menu{display: none}
+		@at-root .sub-menu{display: none}
 	}
 }

@@ -12,8 +12,11 @@
   <link rel="shortcut icon" href="favicon.ico">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
+  <link rel="stylesheet" href="assets/owl.carousel.css">
+  <link rel="stylesheet" href="assets/owl.theme.default.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -25,6 +28,7 @@
 <header class="site-header">
   <div class="container">
     <h1 class="logo">Water <small>do not pollute</small></h1>
+    <!-- <div class="logo">Water <small>do not pollute</small></div> -->
     <div class="ham">
       <span></span>
       <span></span>
@@ -49,6 +53,13 @@
 </header>
 
 <div class="banner">
+  <picture>
+    <source media="(max-width: 767px)" srcset="img/banner-mobile.jpg">
+    <source media="(min-width: 1400px)" srcset="img/banner-xl.jpg">
+    <source media="(min-width: 980px)" srcset="img/banner-l.jpg">
+    <source media="(min-width: 768px)" srcset="img/banner-tab.jpg">
+    <img src="img/banner-l.jpg" alt="Save water Save earth">
+  </picture>
   <div>
     Discover the wold of awsome
     <span>free PSD templates</span>
@@ -56,70 +67,7 @@
 </div>
 <div class="bg-primary">
   <div class="container">
-    <div class="team">
-      <div class="member3">
-        <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
-        <h3>Mr. Xyz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque alias ea!</p>
-      </div><!-- /.member -->
-      <div class="member3">
-        <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
-        <h3>Mr. Xyz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque alias ea!</p>
-      </div><!-- /.member -->
-      <div class="member3">
-        <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
-        <h3>Mr. Xyz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque alias ea!</p>
-      </div><!-- /.member -->
-      <div class="member3">
-        <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
-        <h3 class="title-error">Mr. Xyz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque alias ea!</p>
-      </div><!-- /.member -->
-      <div class="member3">
-        <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
-        <h3>Mr. Xyz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque alias ea!</p>
-      </div><!-- /.member -->
-    </div><!-- /.team -->
-  </div><!-- /.container -->
-</div><!-- /.bg-primary -->
-<div class="bg-primary">
-  <div class="container">
-    <div class="team">
-      <div class="member2">
-        <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
-        <h3 class="title-error">Mr. Xyz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque alias ea!</p>
-      </div><!-- /.member -->
-      <div class="member2">
-        <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
-        <h3>Mr. Xyz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque alias ea!</p>
-      </div><!-- /.member -->
-      <div class="member2">
-        <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
-        <h3>Mr. Xyz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque alias ea!</p>
-      </div><!-- /.member -->
-      <div class="member2">
-        <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
-        <h3>Mr. Xyz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque alias ea!</p>
-      </div><!-- /.member -->
-      <div class="member2">
-        <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
-        <h3>Mr. Xyz</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque alias ea!</p>
-      </div><!-- /.member -->
-    </div><!-- /.team -->
-  </div><!-- /.container -->
-</div><!-- /.bg-primary -->
-
-<div class="bg-primary">
-  <div class="container">
-    <div class="team">
+    <div class="team owl-carousel">
       <div class="member">
         <img src="https://api.fnkr.net/testimg/200x200/#85d648/FFF/?text=Mr.+X">
         <h3>Mr. Xyz</h3>
@@ -151,6 +99,56 @@
 
 
 
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script>
+    jQuery(document).ready(function($) {
+      $('.ham').click(function(event) {
+        $(this).toggleClass('close').next().slideToggle();
+      });
+
+
+      $('.owl-carousel').owlCarousel({
+          center: true,
+          loop:true,
+          margin:10,
+          responsive:{
+              0:{
+                  items:2,
+                  nav:true
+              },
+              480:{
+                  items:2,
+                  nav:true
+              },
+              768:{
+                  items:3,
+                  nav:false
+              },
+              980:{
+                  items:4,
+                  nav:true
+              }
+          }
+      })
+    });
+  </script>
+
+
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>
 

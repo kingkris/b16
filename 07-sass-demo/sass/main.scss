@@ -73,10 +73,67 @@ body{
 }
 .title-error{
 	@extend .title;
-	background-color: #E93131;
+	/* background-color: #E93131; */
+	background-color: $primary-color + #0ff;
 	color:#FFF;
 }
 
 
+.sidebar{
+	background-color: lighten($primary-color, 20%);
+	width:240px;
+	&-title{
+		font-size:30px;
+		background-color: $primary-color;
+	}
+}
+.widget{
+	background-color: lighten($primary-color, 20%);
+	width:240px;
+	&-title{
+		font-size:30px;
+		background-color: $primary-color;
+	}
+}
 
+.my-heading{
+	font:{
+		size:30px;
+		weight:500;
+		style:italic;
+	}
+	background:{
+		color: $primary-color;
+		image: url('../img/bigimage.png');
+		position:center;
+		repeat:no-repeat;
+	}
+}
 
+.new-dabba{
+	@include square($width);
+}
+
+.container{
+	border: 1px solid #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	padding:0 15px;
+
+	@media (min-width:768px){
+		max-width:768px;
+	}
+	@media (min-width:980px){
+		max-width:980px;
+	}
+}
+
+.team {
+	border: 1px solid #E11212;
+	@at-root {
+		.member{
+			border: 3px solid #449602
+		}
+	}
+
+}
