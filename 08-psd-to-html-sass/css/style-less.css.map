@@ -1,0 +1,1 @@
+{"version":3,"sources":["../less/style-less.less"],"names":[],"mappings":"AAGA;EACE,cAAA;;AADF,OAEE;EACC,YAAA;;AACA,OAFD,EAEE;EACA,mCAAA","sourcesContent":["@nice-blue: #5B83AD;\r\n@light-blue: @nice-blue + #111;\r\n\r\n#header {\r\n  color: @light-blue;\r\n  a{\r\n  \tcolor:green;\r\n  \t&:hover{\r\n  \t\ttext-decoration: overline underline;\r\n  \t}\r\n  }\r\n}"]}
