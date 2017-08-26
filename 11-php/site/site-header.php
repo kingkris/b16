@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="container">
-    <h1 class="logo">Water <small>do not pollute</small></h1>
-    <!-- <div class="logo">Water <small>do not pollute</small></div> -->
+    <!-- <h1 class="logo">Water <small>do not pollute</small></h1> -->
+    <div class="logo">Water <small>do not pollute</small></div>
     <div class="ham">
       <span></span>
       <span></span>
@@ -24,4 +24,6 @@
     </nav>
   </div>
 </header>
+
+
 

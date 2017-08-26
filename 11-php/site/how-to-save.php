@@ -17,4 +17,7 @@
   </div>
 </div>
 <h1>How to save</h1>
-<?php include 'footer.php'; ?>
+<?php 
+  include 'site-footer.php'; 
+  include 'footer.php'; 
+?>

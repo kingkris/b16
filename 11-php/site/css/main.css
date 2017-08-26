@@ -8,7 +8,7 @@
    ========================================================================== */
 html {font-size: 1em;}
 body {
-  background-color: white;
+  background-color: #F2F2F2;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.45;
@@ -138,7 +138,6 @@ textarea {
  *
  */
 .container{
-  border: solid 1px #FFF;
   min-width: 300px;
 }
 .container:after{
@@ -358,7 +357,16 @@ textarea {
   border-radius: 100%
 }
 
+/*----------  Site-footer  ----------*/
 
+
+.site-footer{
+  background-color: #C8C8C8;
+  margin-top: 40px;
+  padding:20px;
+  text-align: center;
+  font-size:.75rem;
+}
 
 /* ==========================================================================
    Helper classes
