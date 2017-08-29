@@ -59,6 +59,7 @@
 	$day = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
 
 	$x = rand(0, count($day)-1);
+	
 ?>
 
 
