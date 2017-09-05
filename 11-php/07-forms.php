@@ -170,7 +170,7 @@ body{
 
 <div class="form-wrap bg-grey">
 	<h2 class="bg-title">Form Tags</h2>
-	<form action="07-form-thankyou.php" method="get">
+	<form action="07-form-thankyou.php" method="post">
 		<fieldset>
 			<legend>Personal Info</legend>
 			<div class="form-row">

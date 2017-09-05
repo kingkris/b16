@@ -200,6 +200,39 @@ body{
 		</p>
 	<?php endforeach ?>
 
+<?php
+	$to      = 'kris@htmlden.com';
+	$from 	 =  $postMethod["Email"];
+	$subject = '[testform] - mail from enquiry';
+
+
+	$name = $postMethod['Name'];
+	$email = $postMethod['Email'];
+	$mobile = $postMethod['Mobile'];
+	$message = $postMethod['Message'];
+
+
+	$headers  = 'MIME-Version: 1.0' . "\r\n" .
+	    				'Content-type: text/html; charset=iso-8859-1' . "\r\n".
+							'From: webmaster@htmlden.com' . "\r\n" .
+	    				'Reply-To: ' . $from . "\r\n" .
+	    				'X-Mailer: PHP/' . phpversion().  "\r\n" ;
+
+	$message =	'<div style="background-color:#F7F7F7;padding:30px">' .
+							'<div style="max-width:500px;padding:10px;border:solid 1px #CCC;background-color:#FFF;font-size:14px;color:#444;font-family:sans-serif;margin:10px auto;">'.
+							'<p style="font-size:18px">Hey Admin, <i>'.  $name . '</i> left you a message</p>'.
+							'<p>Details are as below</p>'.
+							'<p>Name: <b>' .$name . '</b></p>'.
+							'<p>Email: <b>' .$email . '</b></p>'.
+							'<p>Mobile: <b>' .$mobile . '</b></p>'.
+							'<p>Message: <b>' .$message . '</b></p>'.
+							'</div>'.
+							'</div>';
+
+
+
+	mail($to, $subject, $message, $headers);
+?>
 
 
 </div>
