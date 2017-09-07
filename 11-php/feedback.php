@@ -164,6 +164,54 @@ body{
   margin-left: 40px;
   border-left: dotted 1px #FBA0A0;
 }
+
+
+.tbl2{
+  width: 90%;
+  margin:20px auto;
+  border: solid 1px #CCC;
+  border-collapse: collapse;
+  empty-cells: 
+}
+.tbl2 caption{
+  background-color: #D9D9D9;
+  font-size: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.tbl2 th{
+  background-color: #BCBCBC;
+  font-size:16px;
+  padding: 6px 2px;
+  border: solid 1px #d9d9d9;
+}
+.tbl2 td{
+  border: solid 1px #BCBCBC;
+  padding:5px;
+  font-size:14px;
+}
+
+.tbl2 tr:nth-child(odd){
+  background-color: #F6E8FF;
+}
+.tbl2 tr:nth-child(even){
+  background-color: #E8E8FF;
+}
+.tbl2 tr:hover{
+  background-color: #D4FDCF;
+  cursor: pointer;
+}
+
+.tbl2-sl      {width:60px; }
+.tbl2-name    {width:220px;}
+.tbl2-email   {width:150px; }
+.tbl2-mobile  {width:120px; }
+
+
+
+
+
+
 	</style>
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Slabo+27px" rel="stylesheet">
@@ -171,90 +219,54 @@ body{
 </head>
 <body>
 
-<?php
-
-	if ($_SERVER["REQUEST_METHOD"]=='POST') {
-		$postMethod = $_POST;
-	}else{
-		$postMethod = $_GET;
-	}
-/*
-	echo 'Hello ' . htmlspecialchars($postMethod["Name"]) . '!';
-	//
-	echo "<pre>";
-	echo var_dump($postMethod);
-	echo "</pre>";
-*/
-?>
 
 
 <div class="form-wrap bg-grey">
-	<h2 class="bg-title">Thank You</h2>
-	<p>Hey <b><?php echo htmlspecialchars($postMethod["Name"]) ?></b> Thanks for getting in touch. We'll Process your request and get back to you soon</p>
-	<p>The details you eneterde as follows</p>
+	<h2 class="bg-title">Feedback</h2>
 
-<!-- 
-	<p>Name: <i><?php echo htmlspecialchars($postMethod["Name"]) ?></i></p>
-	<p>Email: <i><?php echo htmlspecialchars($postMethod["Email"]) ?></i></p>
-	<p>Mobile: <i><?php echo htmlspecialchars($postMethod["Mobile"]) ?></i></p>
- -->
-	<?php foreach ($postMethod as $key => $value): ?>
-		<p><?php 
-					echo $key . ': <i>' . $value . '</i>'; 
-			 ?>
-		</p>
-	<?php endforeach ?>
 
 <?php
-	$to      = 'kris@htmlden.com';
-	$from 	 =  $postMethod["Email"];
-	$subject = '[testform] - mail from enquiry';
-
-
-	$name = $postMethod['Name'];
-	$email = $postMethod['Email'];
-	$mobile = $postMethod['Mobile'];
-	$message = $postMethod['Message'];
 
 
 
-	$sql = "INSERT INTO feedback (name, email, mobile, message) VALUES ('$name', '$email', $mobile, '$message')";
+	//$query = "SELECT * FROM table_name";
+	$query = "SELECT * FROM feedback";
+	mysqli_query($link, $query) or die('Error querying database.');
 
-	if ($link->query($sql) === TRUE) {
-		echo "New record created successfully";
-	} else {
-		echo "Error: " . $sql . "<br>" . $link->error;
-	}
+	$result = mysqli_query($link, $query);
+//	$row = mysqli_fetch_array($result);
 
-
-
-
-
-
-	$headers  = 'MIME-Version: 1.0' . "\r\n" .
-	    				'Content-type: text/html; charset=iso-8859-1' . "\r\n".
-							'From: webmaster@htmlden.com' . "\r\n" .
-	    				'Reply-To: ' . $from . "\r\n" .
-	    				'X-Mailer: PHP/' . phpversion().  "\r\n" ;
-
-	$message =	'<div style="background-color:#F7F7F7;padding:30px">' .
-							'<div style="max-width:500px;padding:10px;border:solid 1px #CCC;background-color:#FFF;font-size:14px;color:#444;font-family:sans-serif;margin:10px auto;">'.
-							'<p style="font-size:18px">Hey Admin, <i>'.  $name . '</i> left you a message</p>'.
-							'<p>Details are as below</p>'.
-							'<p>Name: <b>' .$name . '</b></p>'.
-							'<p>Email: <b>' .$email . '</b></p>'.
-							'<p>Mobile: <b>' .$mobile . '</b></p>'.
-							'<p>Message: <b>' .$message . '</b></p>'.
-							'</div>'.
-							'</div>';
-
-
-
-//	mail($to, $subject, $message, $headers);
 ?>
 
+<table class="tbl2">
+	<caption>My Friends</caption>
+	<thead>
+		<tr>
+			<th class="tbl2-sl">Sl #</th>
+			<th class="tbl2-name">Name</th>
+			<th class="tbl2-email">Email</th>
+			<th class="tbl2-mobile">Mobile</th>
+			<th class="tbl2-message">Message</th>
+		</tr>
+	</thead>
+	<tbody>
 
-<p><a href="feedback.php">View the list of feedback</a></p>
+	<?php
+		while ($row = mysqli_fetch_array($result)) {
+			echo '<tr>';
+				echo '<td>' . ' - ' . '</td>';
+				echo '<td>' . $row['name'] . '</td>';
+				echo '<td>' . $row['email'] . '</td>';
+				echo '<td>' . $row['mobile'] . '</td>';
+				echo '<td>' . $row['message'] . '</td>';
+			echo '</tr>';
+		}
+	?>
+	</tbody>
+</table>
+
+
+<p><a href="07-forms.php">Want to give your feedback!</a></p>
 
 </div>
 

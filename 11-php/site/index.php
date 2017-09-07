@@ -1,6 +1,6 @@
 <?php  
   include 'header.php'; 
-  include 'site-header.php'; 
+  include_once 'site-header.php'; 
 ?>
 
 <div class="banner">
