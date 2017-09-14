@@ -1,0 +1,13 @@
+# you can skip this first one if it is not already excluded by prior patterns
+!wp/
+
+wp/*
+!wp/wp-content/
+
+wp/wp-content/*
+!wp/wp-content/themes/
+
+wp/wp-content/themes/*
+!wp/wp-content/themes/water
+
+

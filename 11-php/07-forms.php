@@ -185,9 +185,13 @@ body{
         <label for="Mobile">Mobile</label>
         <input class="input-box" type="text" id="Mobile" name="Mobile" placeholder="Enter your mobile number">
       </div>
-			<div class="form-row">
-				<label for="Message">Your Message</label>
+      <div class="form-row">
+        <label for="Message">Your Message</label>
         <textarea name="Message" id="Message" placeholder="Enter your message"></textarea>
+      </div>
+			<div class="form-row">
+				<label>Your Photo</label>
+        <input type="file" name="photo">
 			</div>
 			<div><input type="submit" value="Submit"></div>
 		</fieldset>

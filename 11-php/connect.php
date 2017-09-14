@@ -2,7 +2,7 @@
 
 	$dbname = 'b16';
 	$dbuser = 'root';
-	$dbpass = '';
+	$dbpass = 'root';
 	$dbhost = 'localhost';
 
 
