@@ -21,28 +21,15 @@
   <link rel="shortcut icon" href="favicon.ico">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
-
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
-
-
-
-
-
-
-
-
-
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-
   <!-- Add your site or application content here -->
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'water' ); ?></a>
-
 <header class="site-header">
   <div class="container">
 			<?php
@@ -64,42 +51,48 @@
 					'container' => false,
 				) );
 			?>
-<!-- 
-      <ul class="menu">
-        <li class="current-menu-item"><a href="index.html">Home</a></li>
-        <li><a href="how-to.html">How to save</a></li>
-        <li><a href="daily-tips.html">Daily tips &amp; tricks</a></li>
-        <li><a href="get-help.html">Get help</a>
-          <ul class="sub-menu">
-            <li><a href="plumbing.html">Plumbing support</a></li>
-            <li><a href="rain-water.html">Rain water harvesting</a></li>
-          </ul>
-        </li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-      </ul>
- -->      
     </nav>
   </div>
 </header>
 
+
+
 <div class="banner">
-  <picture>
-    <source media="(max-width: 767px)" srcset="https://api.fnkr.net/testimg/418x658/202409/FFF/?text=img+mobil">
-    <source media="(min-width: 1400px)" srcset="https://api.fnkr.net/testimg/2000x900/202409/FFF/?text=img+xl">
-    <source media="(min-width: 980px)" srcset="https://api.fnkr.net/testimg/1500x675/202409/FFF/?text=img+desktop">
-    <source media="(min-width: 768px)" srcset="https://api.fnkr.net/testimg/860x800/202409/FFF/?text=img+tab">
-    <img src="img/banner-l.jpg" alt="Save water Save earth">
-  </picture>
+  <?php if ( has_post_thumbnail() ) : 
+     the_post_thumbnail('full'); 
+   else: ?>
+    <picture>
+      <source media="(max-width: 767px)" srcset="https://api.fnkr.net/testimg/418x658/202409/FFF/?text=img+mobil">
+      <source media="(min-width: 1400px)" srcset="https://api.fnkr.net/testimg/2000x900/202409/FFF/?text=img+xl">
+      <source media="(min-width: 980px)" srcset="https://api.fnkr.net/testimg/1500x675/202409/FFF/?text=img+desktop">
+      <source media="(min-width: 768px)" srcset="https://api.fnkr.net/testimg/860x800/202409/FFF/?text=img+tab">
+      <img src="img/banner-l.jpg" alt="Save water Save earth">
+    </picture>
+  <?php endif; ?>
+
+  <div>
+    Wakeup now!
+    <span>Start saving today!</span>
+  </div>
+
+<?php $meta = get_post_meta( get_the_ID() ); 
+    
+    foreach ($meta as $key => $value) {
+      echo '<p>'.$key . ' - '. $value . '</p>';
+    }
+
+?>
+  
+
+</div>
+<!-- 
+<div class="banner">
   <div>
     Wakeup now!
     <span>Start saving today!</span>
   </div>
 </div>
-
-
-
-
+ -->
 
 
 	<div id="content" class="site-content">

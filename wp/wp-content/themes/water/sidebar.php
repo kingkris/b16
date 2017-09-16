@@ -12,7 +12,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<h2>this is sidebar.php</h2>
 <aside id="secondary" class="widget-area">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->

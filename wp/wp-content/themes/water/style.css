@@ -315,6 +315,9 @@ textarea {
 @media (min-width: 1200px) {
   .menu li{float: left;margin-left: 15px;}
 }
+.menu li{
+  position: relative;
+}
 .menu li a{
   font-size: 1.125em;
   color: #FFF;
@@ -324,15 +327,16 @@ textarea {
   display: block;
   line-height: 2.25;
   border-bottom: solid 1px #2f2f43;
-  padding:0 15px
+  padding:0 15px;
 }
 @media (min-width: 768px) {
   .menu li a{
+    background-color: rgba(0,0,0,0.3);
     border-bottom: none;
+    border-radius: 4px;
   }
   .menu li.current-menu-item a,
   .menu li a:hover{
-    border-radius: 4px;
   }
 
 }
@@ -354,8 +358,26 @@ textarea {
   border-bottom-style:dashed
 }
 @media (min-width: 768px) {
-  .sub-menu{
+  .menu .sub-menu{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background-color: rgba(0,0,0,0.3);
+    min-width:160px;
     display: none;
+    padding: 5px
+  }
+  .menu li:hover .sub-menu{
+    display: block;
+  }
+  .menu .sub-menu li{
+    display: block;
+    float: none;
+    margin-left: 0;
+  }
+  .menu .sub-menu li a{
+    display: block;
+    border-bottom-width: 1px;
   }
 }
 
@@ -371,6 +393,7 @@ textarea {
 .banner img{
   display: block;
   width:100%;
+  height: auto;
 }
 
 .banner > div{
@@ -401,6 +424,58 @@ textarea {
   border-radius: 100%
 }
 
+
+/*----------  Site footer  ----------*/
+
+.site-footer{
+  background-color: #deffd5;
+  padding: 25px;
+  text-align: center;
+}
+.cb{
+  padding: 10px 20px;
+}
+.cb:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.footer-menu{
+  padding-left: 0;
+  list-style: none;
+  float: left;
+}
+.footer-menu li{
+  display: inline;
+}
+.social-menu{
+  padding-left: 0;
+  list-style: none;
+  float: right;
+}
+.social-menu li{
+  display: inline;
+}
+
+
+/*----------  layout styles  ----------*/
+
+.site-content{
+
+}
+
+.white-bg{background-color: #fff;}
+
+.site-main{
+  float: left;
+  width: 920px;
+}
+.widget-area{
+  background-color: #e2e5e5;
+  width: 260px;
+  float: right;
+}
 
 
 /* ==========================================================================

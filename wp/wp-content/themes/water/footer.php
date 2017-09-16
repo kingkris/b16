@@ -14,6 +14,26 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+		<div class="cb">
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'bottom-menu',
+					'menu_class' => 'footer-menu',
+					'container' => false,
+				) );
+			?>
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'social-menu',
+					'menu_class' => 'social-menu',
+					'container' => false,
+				) );
+			?>
+		</div><!-- /.cb -->
+
+
+
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'water' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */

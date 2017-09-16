@@ -9,11 +9,36 @@
 
 get_header(); ?>
 
-<h1>category.php</h1>
-
-
-	<div id="primary" class="content-area">
+<div class="container">
+			
 		<main id="main" class="site-main">
+
+
+
+<ul>
+<?php
+
+global $post;
+$args = array( 'posts_per_page' => 5, 'offset'=> 1	 );
+
+$myposts = get_posts( $args );
+foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+	<li>
+		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+	</li>
+<?php endforeach; 
+wp_reset_postdata();?>
+
+</ul>
+
+
+
+
+
+
+
+
+
 
 		<?php
 		if ( have_posts() ) : ?>
@@ -47,8 +72,8 @@ get_header(); ?>
 		endif; ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
 
+	<?php get_sidebar(); ?>
+</div><!-- /.container -->
 <?php
-get_sidebar();
 get_footer();

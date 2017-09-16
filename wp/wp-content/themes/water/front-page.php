@@ -14,8 +14,40 @@
 
 get_header(); ?>
 
-	<h1>Front-page.php</h1>
-	<div id="primary" class="content-area">
+
+
+<div class="white-bg">
+	<div class="container">
+		<h1>Some info on saving water</h1>
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eum, sunt voluptatum nihil veniam cum reprehenderit similique, voluptas eveniet officia!</p>
+
+
+<?php
+$categories = get_categories( array(
+    'orderby' => 'name',
+    'order'   => 'ASC',
+    'hide_empty'   => false
+) );
+ 
+foreach( $categories as $category ) {
+    $category_link = sprintf( 
+        '<a href="%1$s" alt="%2$s">%3$s</a>',
+        esc_url( get_category_link( $category->term_id ) ),
+        esc_attr( sprintf( __( 'View all posts in %s', 'textdomain' ), $category->name ) ),
+        esc_html( $category->name )
+    );
+     
+    echo '<h2>' . sprintf( $category_link ) . '</h2> ';
+    echo '<p>' . sprintf(  $category->description ) . '</p>';
+} 
+?>
+
+
+	</div><!-- /.container -->
+</div><!-- /.white-bg -->
+
+
+
 		<main id="main" class="site-main">
 
 			<?php
@@ -32,8 +64,6 @@ get_header(); ?>
 			?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
