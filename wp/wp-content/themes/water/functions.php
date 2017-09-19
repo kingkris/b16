@@ -47,6 +47,7 @@ if ( ! function_exists( 'water_setup' ) ) :
 			'top-menu' => esc_html__( 'Top Menu', 'water' ),
 			'social-menu' => esc_html__( 'Social Menu', 'water' ),
 			'bottom-menu' => esc_html__( 'Bottom Menu', 'water' ),
+			'simple-menu' => esc_html__( 'Simple Menu', 'water' ),
 		) );
 
 		/*
@@ -236,6 +237,23 @@ function custom_post_type() {
 */
  
 add_action( 'init', 'custom_post_type', 0 );
+
+
+// Add Shortcode
+function col_shortcode( $atts , $content = null ) {
+
+	// Attributes
+	$atts = shortcode_atts(
+		array(
+			'class' => 'half',
+		),
+		$atts
+	);
+
+	return '<div class="half">' . $content . '</half>';
+
+}
+add_shortcode( 'col', 'col_shortcode' );
 
 
 

@@ -206,7 +206,13 @@ textarea {
 .bg-primary-light{background-color: #ffe347; }
 
 
-
+.half{
+  float: left;
+  width: 50%;
+  min-height: 150px;
+  padding: 25px;
+  background-color: #ecf0f0;
+}
 
 /*----------  Header Style  ----------*/
 .site-header{
@@ -215,6 +221,10 @@ textarea {
   left: 0;right: 0;
   top: 0;
   z-index: 2
+}
+.site-header-inner{
+  border-top: solid 16px #fc21b2;
+  background-color: #ffe1b7;
 }
 .logo{
   color: #FFF;
@@ -288,6 +298,7 @@ textarea {
 
 /*----------  Nav Styles  ----------*/
 @media (max-width: 767px) {
+  .site-header-inner nav,
   .site-header nav{
     background-color: #15151f;
     position: absolute;
@@ -298,6 +309,7 @@ textarea {
   }
 }
 @media (min-width: 1200px) {
+  .site-header-inner nav,
   .site-header nav{
     float: right;
     margin: 30px 0 0 0;

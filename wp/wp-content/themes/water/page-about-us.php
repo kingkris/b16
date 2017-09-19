@@ -12,7 +12,7 @@
  * @package Water_-_Save_it
  */
 
-get_header(); ?>
+get_header('inner'); ?>
 
 	<h1>page-about-us.php</h1>
 	<div id="primary" class="content-area">
