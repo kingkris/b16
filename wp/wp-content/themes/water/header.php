@@ -75,11 +75,13 @@
     <span>Start saving today!</span>
   </div>
 
-<?php $meta = get_post_meta( get_the_ID() ); 
+<?php 
+
+    // $meta = get_post_meta( get_the_ID() ); 
     
-    foreach ($meta as $key => $value) {
-      echo '<p>'.$key . ' - '. $value . '</p>';
-    }
+    // foreach ($meta as $key => $value) {
+    //   echo '<p>'.$key . ' - '. $value . '</p>';
+    // }
 
 ?>
   

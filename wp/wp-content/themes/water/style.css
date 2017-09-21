@@ -213,6 +213,55 @@ textarea {
   padding: 25px;
   background-color: #ecf0f0;
 }
+/*----------  Custom Styles  ----------*/
+
+.cb{
+  clear: both;
+  margin: 30px 0;
+  background-color: #f0f0e6; 
+  padding: 20px 50px;
+}
+.cb:after{
+  clear: both;
+  display: block;
+  content: ""
+}
+
+.cb .article{
+  width: 33.333%;
+  padding: 15px;
+  float: left;
+  position: relative;
+  min-height: 200px;
+}
+.cb .article:after{
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  border-right: dotted 1px #CCC;
+  top: 0;
+  right: 0;
+  content: "";
+}
+.cb .article:last-child:after{
+  border-right-color: #f0f0e6;
+}
+.cb .article h2{
+  margin-top: 0;
+  font-size: 20px;
+}
+.cb .article h2 a{
+  color: #444;
+  text-decoration: none;
+}
+.cb .article img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
 
 /*----------  Header Style  ----------*/
 .site-header{
