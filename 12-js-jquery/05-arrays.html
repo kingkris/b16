@@ -77,46 +77,39 @@ function getRandom(min, max) {
 }
 
 
-totalGames = 0;
-totalWon = 0;
-hatrick = 0;
-totalLost = 0;
+function myarray() {
+  var list = ['Coffee', 'Tea', 'Sugar'];
+  console.log(list.length);
 
-while (hatrick<3) {
-  randomNumber = getRandom(0,1);
-  console.log(randomNumber);
-  totalGames++;
+  list.forEach( function(element, index) {
+    document.write('<p>' + index + ' - ' + element + '</p>');
+  });
 
-  if (randomNumber) {// Win
-    clsname = 'won';
-    totalWon++;
-    hatrick++;
-  } else{ // Lost
-    clsname = 'lost';
-    totalLost++;
-    hatrick = 0;
-  }
+  document.write('<hr>');
 
-  elem = '<div class="toss ' + clsname +'">' + clsname +' </div>';
-  document.write(elem)
+  list.push('Almonds');
+  list.unshift('Handwash Soap');
+  console.log(list.length);
+  list.forEach( function(element, index) {
+    document.write('<p>' + index + ' - ' + element + '</p>');
+  });
+  document.write('<hr>');
+  list.sort();
+  list.reverse();
+  list.forEach( function(element, index) {
+    document.write('<p>' + index + ' - ' + element + '</p>');
+  });
+  document.write('<hr>');
+
+    document.write('<p>' + list[3] + '</p>');
+    document.write('<p>' + list[2].toLowerCase() + list[2].length + '</p>');
+
+
+
+
 }
 
-  document.write('<p> Total GAmes Played ' + totalGames + '</p>')
-  document.write('<p> Total GAmes Won ' + totalWon + '</p>')
-  document.write('<p> Total GAmes Lost ' + totalLost + '</p>')
-  document.write('<p> Your Win percentage is ' + ((totalWon / totalGames)*100) + '% </p>')
-
-
-
-i = 4;
-
-while (i<=10) {
-  console.log(++i);
-}
-
-
-
-
+myarray();
 
 </script>
 <!--

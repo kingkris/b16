@@ -79,10 +79,11 @@ function getRandom(min, max) {
 
 totalGames = 0;
 totalWon = 0;
-hatrick = 0;
+hatrick = 3;
 totalLost = 0;
 
-while (hatrick<3) {
+
+do{
   randomNumber = getRandom(0,1);
   console.log(randomNumber);
   totalGames++;
@@ -99,7 +100,9 @@ while (hatrick<3) {
 
   elem = '<div class="toss ' + clsname +'">' + clsname +' </div>';
   document.write(elem)
-}
+} while (hatrick<3);
+
+
 
   document.write('<p> Total GAmes Played ' + totalGames + '</p>')
   document.write('<p> Total GAmes Won ' + totalWon + '</p>')
@@ -108,12 +111,49 @@ while (hatrick<3) {
 
 
 
-i = 4;
 
-while (i<=10) {
-  console.log(++i);
+function pyramid() {
+  document.write('<div class="pyramid">');
+  for (var i = 1; i <= 10; i++) {
+    document.write('<p>');
+    for (var j = 1; j <= i; j++) {
+      document.write(' * ');
+    }
+    document.write('</p>');
+  }
+  document.write('</div>');
 }
 
+function pyramidx(a) {
+  var rows = a;
+  document.write('<div class="pyramid">');
+  for (var i = 1; i <= rows; i++) {
+    document.write('<p>');
+    for (var j = 1; j <= i; j++) {
+      document.write(' * ');
+    }
+    document.write('</p>');
+  }
+  document.write('</div>');
+}
+function pyramidrandom(a) {
+  var max = a;
+  rows = getRandom(0, max)
+  document.write('<div class="pyramid">');
+  for (var i = 1; i <= rows; i++) {
+    document.write('<p>');
+    for (var j = 1; j <= i; j++) {
+      document.write(' * ');
+    }
+    document.write('</p>');
+  }
+  document.write('</div>');
+}
+
+pyramid();
+pyramidx(5);
+pyramidx(15);
+pyramidrandom(15);
 
 
 

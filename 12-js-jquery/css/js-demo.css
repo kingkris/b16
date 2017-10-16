@@ -408,6 +408,26 @@ textarea {
 }
 
 
+
+
+
+.pyramid{
+  clear: both;
+  border: solid 1px #CCC;
+  background-color: #fff;
+  padding: 25px;
+  text-align: center;
+  font-size: 22px;
+  margin: 50px auto;
+  width: 500px;
+  border-radius: 6px
+}
+.pyramid p{
+  line-height: 1;
+  margin: 0;
+  word-spacing: 10px
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

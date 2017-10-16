@@ -70,59 +70,33 @@
 
 <script>
 
-function getRandom(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-
-totalGames = 0;
-totalWon = 0;
-hatrick = 0;
-totalLost = 0;
-
-while (hatrick<3) {
-  randomNumber = getRandom(0,1);
-  console.log(randomNumber);
-  totalGames++;
-
-  if (randomNumber) {// Win
-    clsname = 'won';
-    totalWon++;
-    hatrick++;
-  } else{ // Lost
-    clsname = 'lost';
-    totalLost++;
-    hatrick = 0;
+  function getRandom(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  elem = '<div class="toss ' + clsname +'">' + clsname +' </div>';
-  document.write(elem)
-}
 
-  document.write('<p> Total GAmes Played ' + totalGames + '</p>')
-  document.write('<p> Total GAmes Won ' + totalWon + '</p>')
-  document.write('<p> Total GAmes Lost ' + totalLost + '</p>')
-  document.write('<p> Your Win percentage is ' + ((totalWon / totalGames)*100) + '% </p>')
+  function myobjects() {
 
+    var  student = {
+      age:20,
+      id:'x123',
+      marks: function(){
+        document.write('<p>You are not eligible for results now!</p>')
+      }
+    }
 
-
-i = 4;
-
-while (i<=10) {
-  console.log(++i);
-}
+    document.write('<p>Age of the student is ' + student.age + '<p>');
+    student.marks();
 
 
-
-
+  }
+  myobjects();
 
 </script>
-<!--
-      <div class="toss won">Won</div>
-      <div class="toss lost">Lost</div>
- -->
+
+
     </div><!-- /.team -->
   </div><!-- /.container -->
 </div><!-- /.bg-primary -->
