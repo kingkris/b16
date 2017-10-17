@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Developed by dzineden</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="KriShne Gowda NL">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/js-demo.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
+
+
+</head>
+<body id="top">
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">Water <small>do not pollute</small></h1>
+    <!-- <div class="logo">Water <small>do not pollute</small></div> -->
+    <div class="ham">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li class="current-menu-item"><a href="index.html">Home</a></li>
+        <li><a href="how-to.html">How to save</a></li>
+        <li><a href="daily-tips.html">Daily tips &amp; tricks</a></li>
+        <li><a href="get-help.html">Get help</a>
+          <ul class="sub-menu">
+            <li><a href="plumbing.html">Plumbing support</a></li>
+            <li><a href="rain-water.html">Rain water harvesting</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="banner">
+  <picture>
+    <source media="(max-width: 767px)" srcset="img/banner-mobile.jpg">
+    <source media="(min-width: 1400px)" srcset="img/banner-xl.jpg">
+    <source media="(min-width: 980px)" srcset="img/banner-l.jpg">
+    <source media="(min-width: 768px)" srcset="img/banner-tab.jpg">
+    <img src="img/banner-l.jpg" alt="Save water Save earth">
+  </picture>
+  <div>
+    Discover the wold of awsome
+    <span id="tagline">free PSD templates</span>
+  </div>
+</div>
+<div class="bg-primary">
+  <div class="container">
+    <div class="team">
+      <div class="member1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam iusto, officiis assumenda, tempora ut asperiores harum reprehenderit vero neque deleniti repellendus voluptate explicabo! Ea quae unde, quidem, eligendi maiores perspiciatis.</p>
+        <a href="#" class="big-btn">Close</a>
+      </div><!-- /.member1 -->
+      <div class="member1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam iusto, officiis assumenda, tempora ut asperiores harum reprehenderit vero neque deleniti repellendus voluptate explicabo! Ea quae unde, quidem, eligendi maiores perspiciatis.</p>
+        <a href="#" class="big-btn">Close</a>
+      </div><!-- /.member1 -->
+      <div class="member1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam iusto, officiis assumenda, tempora ut asperiores harum reprehenderit vero neque deleniti repellendus voluptate explicabo! Ea quae unde, quidem, eligendi maiores perspiciatis.</p>
+        <a href="#" class="big-btn">Close</a>
+      </div><!-- /.member1 -->
+      <div class="member1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam iusto, officiis assumenda, tempora ut asperiores harum reprehenderit vero neque deleniti repellendus voluptate explicabo! Ea quae unde, quidem, eligendi maiores perspiciatis.</p>
+        <a href="#" class="big-btn">Close</a>
+      </div><!-- /.member1 -->
+    </div><!-- /.team -->
+  </div><!-- /.container -->
+</div><!-- /.bg-primary -->
+<div class="bg bg-green">
+  <h2>Green</h2>
+</div><!-- /.bg bg-green -->
+<div class="bg bg-blue">
+  <h2>Blue</h2>
+</div><!-- /.bg bg-blue -->
+<div class="bg bg-orange">
+  <h2>Orange</h2>
+</div><!-- /.bg bg-orange -->
+
+
+
+<a href="#top" class="btn-top">Top</a>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+
+
+<script>
+  jQuery(document).ready(function($) {
+    // Toggle the blocks
+    $('.big-btn').click(function(e) {
+      e.preventDefault();
+      btn = $(this);
+      x = btn.text();
+      console.log(x)
+      if(x == 'Close'){
+        btn.text('Open');
+      } else{
+        btn.text('Close');
+      }
+      btn.prev().slideToggle('slow');
+    });
+    // Enable back to top button when page is scrolled
+    $(document).scroll(function(event) {
+      /* Act on the event */
+      x = $(this).scrollTop();
+      if(x>400){
+        $('.btn-top').fadeIn();
+      } else{
+        $('.btn-top').fadeOut();
+      }
+    });
+    // Back to top
+    $('.btn-top').click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({scrollTop: 0}, 500)
+    });
+  });
+</script>
+
+
+
+
+</body>
+</html>
+
