@@ -125,8 +125,10 @@
       x = $(this).scrollTop();
       if(x>400){
         $('.btn-top').fadeIn();
+        $('.site-header').addClass('fixed-header')
       } else{
         $('.btn-top').fadeOut();
+        $('.site-header').removeClass('fixed-header')
       }
     });
     // Back to top
@@ -134,6 +136,30 @@
       event.preventDefault();
       $('html, body').animate({scrollTop: 0}, 500)
     });
+    // Toggle menu in mobile view
+    $('.ham').click(function() {
+      /*
+      // Checking if it has class and then
+      // adding or removing class based on the result
+
+          if ($(this).hasClass('close')) {
+            $(this).removeClass('close');
+          } else{
+            $(this).addClass('close');
+          }
+      */
+
+      //Executing two tasks
+      // 1. adding or removing the class to ham
+      // 2. sliding open or closing the menu
+      /*
+        $(this).toggleClass('close');
+        $('.site-header nav').slideToggle();
+      */
+      //Jquery Chaining
+      $(this).toggleClass('close').next().slideToggle('slow');
+    });
+
   });
 </script>
 
