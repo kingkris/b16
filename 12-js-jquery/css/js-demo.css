@@ -60,9 +60,6 @@ video {
   vertical-align: middle;
 }
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
 }
 textarea {
   resize: vertical;
@@ -487,6 +484,85 @@ textarea {
   text-decoration: none;
   display: none;
 }
+
+
+/*===================================
+=            Form Styles            =
+===================================*/
+
+.form-wrap{
+  padding: 10px;
+}
+.form-wrap form{
+  width:600px;
+  margin:20px auto;
+}
+
+
+.form-row{
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding:10px
+}
+.form-row label{
+  width:150px;
+  display: inline-block;
+  text-align: right;
+  font-size: 13px;
+  color: #666;
+}
+
+.txt-area{
+  width:300px;
+  resize: horizontal;
+}
+
+
+
+.bg-title{
+  background-color: #9500F4;
+  padding:10px;
+  text-align: center;
+  margin:0 0 20px;
+  color:#FFF;
+}
+.form-sub-row{}
+.form-row .form-sub-row label{
+  text-align: left;
+  cursor: pointer;
+}
+
+.form-sub-row input:checked ~ label{
+  color:red;
+  font-weight: bold;
+}
+.form-sub-row input[type="checkbox"]:checked ~ label{
+  color:green;
+}
+.btn-row{
+  background-color: #dee1e1;
+  padding: 20px;
+  margin: 20px;
+}
+.btn-row input[type="submit"]{
+  padding: 0 10px;
+  background-color: #fff;
+  border: solid 1px #CCC;
+  line-height: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.help-block{
+  font-size: 13px;
+  display: block;
+  padding: 10px 10px 0 40px;
+}
+.form-error{
+  color: crimson;
+}
+
+/*=====  End of Form Styles  ======*/
 
 
 /* ==========================================================================
